@@ -54,3 +54,7 @@ PS：在本人作品文件夹内，须包含参赛作品的readme文件，内容
 
 # 相关资源：
 所有agora demo列表及readme链接：https://rtcdeveloper.com/t/topic/12820
+
+# License
+All sample applications are licensed under the MIT License (MIT). View the license.
+
