@@ -13,21 +13,27 @@
 
 # 比赛日程
 
-(1)7月1日线上比赛启动
+7月1日线上比赛启动
 
-(2)9月30日，线上提交截止
+9月30日，线上提交截止
 
-(3)10月23日，线下答辩，决赛
+10月23日，线下答辩，决赛
 
-(4)10月24日，RTC2019实时互联网大会现场，颁奖典礼
+10月24日，RTC2019实时互联网大会现场，颁奖典礼
 
 # 怎么参与
 
-注册Agora开发者帐户
+注册Agora开发者帐户 https://www.agora.io/cn/
 
-加入qq群或论坛https://rtcdeveloper.com  ， 获取任何问题的答案
+Fork官方仓库至个人github仓库
 
-Xxx如何在github参与加入
+Clone个人github仓库至本地
+
+在本地ChallengeProject文件夹下创建个人项目文件夹，将参赛作品放置个人文件夹
+
+Pull Request 提交本人作品至官方仓库
+
+加入官方QQ群或论坛https://rtcdeveloper.com ， 获取任何问题的答案
 
 
 # 奖励
