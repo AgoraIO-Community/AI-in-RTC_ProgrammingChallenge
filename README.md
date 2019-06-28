@@ -52,7 +52,6 @@ PS：在本人作品文件夹内，须包含参赛作品的readme文件，内容
 
 招聘绿色通道：提交作品，即可直接进入面试环节；作品优异者，直接发offer
 
-# 版权
 
 # 相关资源：
 所有agora demo列表及readme链接：https://rtcdeveloper.com/t/topic/12820
