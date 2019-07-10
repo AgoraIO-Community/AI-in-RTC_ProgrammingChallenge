@@ -8,7 +8,7 @@
 未受雇于Agora.io的人员。
 
 # 报名表单
-* [报名表单入口](https://www.wenjuan.com/s/F3iuuqe/)
+* [报名表单入口](https://www.huodongxing.com/event/8500759008100)
 
 # 作品要求
 
