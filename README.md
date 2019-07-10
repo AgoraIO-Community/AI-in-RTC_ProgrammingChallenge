@@ -29,7 +29,7 @@
 * 10月24日，RTC2019实时互联网大会现场，颁奖典礼
 
 # 怎么参与
-* [填写报名表单](https://www.wenjuan.com/s/F3iuuqe/)
+* [填写报名表单](https://www.huodongxing.com/event/8500759008100)
 
 * 注册Agora开发者帐户 https://www.agora.io/cn/
 
