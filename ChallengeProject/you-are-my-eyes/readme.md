@@ -8,6 +8,10 @@
 
 帮助盲人进行导盲，利用社会力量解决我们导盲犬不够的难题，可以在这部分加入AI，对于一些简单路况AI可以替代人完成对盲人的导盲工作。
 
+## 产品原型
+
+[https://org.modao.cc/app/e0463b673482f5aa1de78921f91da00ed43a0245](https://org.modao.cc/app/e0463b673482f5aa1de78921f91da00ed43a0245)
+
 ## 团队介绍
 
 * [David Happ(麦索)](https://github.com/dongm2ez)
