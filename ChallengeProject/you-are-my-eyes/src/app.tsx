@@ -20,16 +20,17 @@ class App extends Component {
    */
   config: Config = {
     pages: [
-      'pages/index/index'
+      'pages/index/index',
+      'pages/loading/loading',
     ],
     window: {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#fff',
-      navigationBarTitleText: 'WeChat',
-      navigationBarTextStyle: 'black'
+      navigationBarTitleText: '你是我的眼',
+      navigationBarTextStyle: 'black',
     },
     permission: {
-      'scope.userLocation': {
+      'scope.userLocation':{
         'desc': ''
       }
     }

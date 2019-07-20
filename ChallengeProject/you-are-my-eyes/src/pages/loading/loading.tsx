@@ -1,8 +1,10 @@
-import Taro, { Component, Config } from '@tarojs/taro'
-import { View, Button } from '@tarojs/components'
-import './index.scss'
 
-export default class Index extends Component {
+const AgoraMiniappSDK = require('../../lib/Agora_Miniapp_SDK_for_WeChat.js');
+import Taro, { Component, Config } from '@tarojs/taro'
+import { View, Text, LivePusher } from '@tarojs/components'
+import './loading.scss'
+
+export default class Loading extends Component {
 
   /**
    * 指定config的类型声明为: Taro.Config
@@ -13,12 +15,6 @@ export default class Index extends Component {
    */
   config: Config = {
 
-  }
-
-  callVolunteer = () => {
-    Taro.navigateTo({
-      url: '/pages/loading/loading'
-    })
   }
 
   componentWillMount () { }
@@ -33,10 +29,9 @@ export default class Index extends Component {
 
   render () {
     return (
-      <View className='index'>
-          <Button className='index-button' onLongPress={this.callVolunteer}>
-            呼叫志愿者导盲
-          </Button>
+      <View className='loading'>
+          <LivePusher url='url' mode='RTC' />
+          <Text>等待志愿者链接中……</Text>
       </View>
     )
   }
