@@ -28,7 +28,9 @@ export default class Index extends Component {
   render () {
     return (
       <View className='index'>
-        <Text>Hello world!</Text>
+        <View className='index-text-view'>
+          <Text>呼叫志愿者导盲</Text>
+        </View>
       </View>
     )
   }
