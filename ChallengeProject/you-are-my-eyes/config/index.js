@@ -1,5 +1,5 @@
 const config = {
-  projectName: 'you-are-my-eyes2',
+  projectName: 'you-are-my-eyes',
   date: '2019-7-20',
   designWidth: 750,
   deviceRatio: {
