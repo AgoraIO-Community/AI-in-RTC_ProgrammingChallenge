@@ -65,7 +65,7 @@ PS：提交作品时，本人作品文件夹内须包含源码、Readme文件（
 * [组队链接](https://github.com/AgoraIO-Community/AI-in-RTC_ProgrammingChallenge/wiki)
 
 # 相关资源：
-* [Agora官网](agora.io)
+* [Agora官网](https://www.agora.io/cn/)
 * [黑客松官网](https://webrtc.org.cn/ai-in-rtc/)
 * [Agora Demo & Readme 全集](https://rtcdeveloper.com/t/topic/12820)
 * [往届作品&社区作品](https://github.com/AgoraIO-Community)
