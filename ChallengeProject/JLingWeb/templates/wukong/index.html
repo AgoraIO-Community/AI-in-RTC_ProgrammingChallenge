@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Joseph Pan">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>wukong-robot</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" crossorigin="anonymous">
+    <link href="/static/mfb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/spin.css" crossorigin="anonymous">
+    <link href="/static/favicon.png" rel='icon' type='image/x-icon'/>
+    <script src="/static/popper.min.js" crossorigin="anonymous"></script>
+    <script src="/static/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+
+
+    <style>
+      .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+      }
+
+      @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+              font-size: 3.5rem;
+          }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+
+  </head>
+  <body>
+
+<link rel="stylesheet" href="/static/starter-template.css" crossorigin="anonymous">
+<link rel="stylesheet" href="/static/bubble.css" crossorigin="anonymous">
+<link rel="stylesheet" href="/static/progressjs.min.css" crossorigin="anonymous">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="/">wukong-robot</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">会话</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/config">配置</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/log">日志</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/api">API</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/donate">捐赠</a>
+      </li>
+    </ul>
+    <div class="form-inline my-2 my-lg-0">
+      <a class="btn btn-outline-success my-2 my-sm-0" href="https://wukong.hahack.com" target="_blank">文档</a>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron">
+  <h1 class="display-4"><image src="/static/robot.png" width=128px attr="wukong-robot"/> wukong-robot</h1>
+  <p class="lead">wukong-robot 是一个简单灵活的中文语音对话机器人。</p>
+  <hr class="my-4">
+  <p><i class="fas fa-info-circle"></i> 本站点是 wukong-robot 的后台管理端，仅供远程交互，不支持离线唤醒。</p>
+
+
+
+</div>
+
+<div class="container">
+
+<div class="alert update-alert alert-success alert-dismissible fade show" role="alert">
+  有新的更新可用，<a href="#" id="check-update" data-toggle="modal" data-target="#updateModal">快看看吧</a> 。
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="updateModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="updateModalLabel">更新信息</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <ul>
+
+
+        </ul>
+        一次更新只需要花费几分钟的时间，完成后 wukong-robot 将自动重启。
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">先不更新</button>
+        <button type="button" class="btn btn-primary UPDATE">
+          <span class="spinner-border spinner-border-sm UPDATE-SPIN" role="status" aria-hidden="true" hidden></span>
+          更新
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class="container history" id="container">  
+
+  <center>
+    <p> 无聊天记录，请先和 wukong-robot 聊会天吧~ </p>
+  </center>
+
+              <div class="right">
+                 <div class="bubble-green">
+                   <div class="bubble-avatar"><i class="fas fa-user"></i></div>
+                   <p style="text-align: left" id="123">{{ h1231 }}</p>
+                 </div>
+              </div>
+
+              <div class="left">
+                <div class="bubble-white">
+                  <div class="bubble-avatar"><image src="/static/robot.png" width=32px attr="robot" /></div>
+                  <p style="text-align: left" id="1231">{{ h123 }}</p>
+                </div>
+              </div>
+
+</div>
+
+<br/>
+
+<div class="container query-form">
+  <center>
+<form class="form-row" action="#">
+    <label for="query" class="col-sm-2 col-form-label col-form-label-lg">说句话：</label>
+    <div class="col-7">
+      <input type="text" class="form-control" name="query" id="query" placeholder="{{suggestion}}" required autofocus>    </div>
+    &nbsp;
+    <button type="submit" class="btn btn-primary mb-2 CHAT"><i class="fas fa-comment"></i> 发送</button>
+</form>
+</center>
+</div>
+
+<ul id="recorder" class="mfb-component--br mfb-zoomin" data-mfb-toggle="hover">
+      <li class="mfb-component__wrap">
+        <a href="#" id="record" class="mfb-component__button--main">
+          <i class="mfb-component__main-icon--resting fa fa-microphone"></i>
+          <i class="mfb-component__main-icon--active fa fa-times"></i>
+        </a>
+        <ul class="mfb-component__list">
+          <li>
+            <a href="#" id="stop-record" data-mfb-label="停止录制语音指令" class="mfb-component__button--child">
+              <i class="mfb-component__child-icon fas fa-stop"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" id="start-record" data-mfb-label="开始录制语音指令" class="mfb-component__button--child ">
+              <i class="mfb-component__child-icon fas fa-circle"></i>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+
+<script src="/static/main.js" crossorigin="anonymous"></script>
+<script src="/static/index.js" crossorigin="anonymous"></script>
+<script src="/static/recorder.min.js"></script>
+<script src="/static/progress.min.js"></script>
+
+
+          <div class="footer">
+          <span class="mt-5 mb-3 text-muted"><a href="http://github.com/wzpan/wukong-robot" target="_blank">wukong-robot</a> &copy; 2019 </span>
+        </div>
+
+        <script src="/static/modernizr.touch.js"></script>
+        <script src="/static/mfb.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </body>
+</html>
