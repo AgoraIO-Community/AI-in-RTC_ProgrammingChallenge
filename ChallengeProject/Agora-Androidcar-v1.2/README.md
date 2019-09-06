@@ -40,11 +40,11 @@
 <p style="margin-left: 40px;">
 	<strong><span style="color: rgb(192, 80, 77); --darkreader-inline-color:#c9837e;" data-darkreader-inline-color="">特别说明</span></strong>：车载手机通过红外遥控小车，虽然红外的遥控的控制距离只有10m左右，无法绕过障碍物进行遥控。但发射红外遥控信号的手机就架在小车上，可以将手机的红外发射器和红外接收器放在一块固定住。虽然并不是所有的安卓手机都有红外发射器，但都有3.5mm的耳机接口，红外信号的38kHz频率在音频范围内，可以用耳机接口外接的红外发光二极管发射红外遥控信号。如果使用蓝牙来完成对小车的控制，小车上需要配备蓝牙模块与手机进行配对通信。而且并不是所有的手机都支持蓝牙，早期的一些安卓智能手机就不支持蓝牙。而且蓝牙需要配对连接，红外遥控无需配对连接，省去等待时间。相比蓝牙模块，红外模块成本更低。所以采用红外遥控模式。</p><hr><p><b style="background-color: initial; --darkreader-inline-bgcolor: initial;" data-darkreader-inline-bgcolor=""><span style="font-size: 18px;">下面是远程手机端演示</span></b></p>
 
-[![Watch the video](https://github.com/RoachWZ/AI-in-RTC_ProgrammingChallenge/blob/master/ChallengeProject/Agora-Androidcar-v1.2/photo/bf.png)](https://player.bilibili.com/player.html?aid=62053730&cid=107876643&page=2")
+[![Watch the video](https://github.com/RoachWZ/AI-in-RTC_ProgrammingChallenge/blob/master/ChallengeProject/Agora-Androidcar-v1.2/photo/bf.png)](https://player.bilibili.com/player.html?aid=62053730&cid=107876643&page=2)
 
 <p><strong><span style="font-size: 18px;">下面是远程电脑端演示</span></strong></p>
 
-[![Watch the video](https://github.com/RoachWZ/AI-in-RTC_ProgrammingChallenge/blob/master/ChallengeProject/Agora-Androidcar-v1.2/photo/bf.png)](https://player.bilibili.com/player.html?aid=62053730&cid=107876643&page=1")
+[![Watch the video](https://github.com/RoachWZ/AI-in-RTC_ProgrammingChallenge/blob/master/ChallengeProject/Agora-Androidcar-v1.2/photo/bf.png)](https://player.bilibili.com/player.html?aid=62053730&cid=107876643&page=1)
 
 <p><strong><span style="font-size: 20px;"><br></span></strong></p><p>
 	<strong><span style="font-size: 20px;">七、 参考文献</span></strong></p><p style="margin-left: 20px;">
