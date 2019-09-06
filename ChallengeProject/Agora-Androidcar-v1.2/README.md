@@ -13,7 +13,7 @@
 	2）红外遥控车（STC89C52RC ）</p><p style="margin-left: 40px;">
 	3）人脸检测追踪（android手机编程）</p><p><span style="font-size: 16px;"><img src="https://github.com/RoachWZ/AI-in-RTC_ProgrammingChallenge/blob/master/ChallengeProject/Agora-Androidcar-v1.2/photo/%E5%B1%95%E7%A4%BA_%E4%BA%BA%E8%84%B8%E8%BF%BD%E8%B8%AA1.gif"></span><strong><br><span style=""><span style="font-size: 20px;">下面是 人脸跟随演 和&nbsp;</span></span></strong><strong><span style="font-size: 20px;">制作过程 的视频：</span></strong></p>
 
-[![Watch the video](https://github.com/RoachWZ/AI-in-RTC_ProgrammingChallenge/blob/master/ChallengeProject/Agora-Androidcar-v1.2/photo/super_car3.png)](https://player.bilibili.com/player.html?aid=61487867&cid=114674825&page=2)
+[![Watch the video](https://github.com/RoachWZ/AI-in-RTC_ProgrammingChallenge/blob/master/ChallengeProject/Agora-Androidcar-v1.2/photo/bf.png)](https://player.bilibili.com/player.html?aid=61487867&cid=114674825&page=2)
 
 <p>
 	<strong><span style="font-size: 20px;">五、制作材料：</span></strong></p><p style="margin-left: 40px;">
@@ -27,12 +27,12 @@
 	5）锂电池:2200mAH 两节7.4V   + 充电器（可用充电宝代替）</p><p style="margin-left: 40px;">
 	6）杜邦线若干</p><p style="margin-left: 40px;">
 	7)&nbsp; 车载手机支架（有车一族，不用的车载手机支架可以利用）</p><p>
-	<strong></strong><span style="color: rgb(192, 80, 77); --darkreader-inline-color:#c9837e;" data-darkreader-inline-color=""><strong>总共约200左右，如果去掉5）7）剩下的也就<span style=""><span style="font-size: 28px;">100元出头</span></span></strong></span></p><p><span style="color: rgb(192, 80, 77); --darkreader-inline-color:#c9837e;" data-darkreader-inline-color=""></span></p><hr>
+	<strong></strong><span style="color: rgb(192, 80, 77); --darkreader-inline-color:#c9837e;" data-darkreader-inline-color=""><strong>总共约200左右，如果去掉5）7）剩下的也就<span style=""><span style="font-size: 28px;"><h3>100元</h3>出头</span></span></strong></span></p><p><span style="color: rgb(192, 80, 77); --darkreader-inline-color:#c9837e;" data-darkreader-inline-color=""></span></p><hr>
 <p style="margin-left: 20px;"><strong><span style="color: rgb(0, 0, 0);"><span style=""><span style="font-size: 24px;">网上类似的产品价格都不是很亲民</span></span></span></strong></p><p><span style="color: rgb(192, 80, 77); --darkreader-inline-color:#c9837e;" data-darkreader-inline-color=""></span></p><p><img src="https://github.com/RoachWZ/AI-in-RTC_ProgrammingChallenge/blob/master/ChallengeProject/Agora-Androidcar-v1.2/photo/%E5%90%8C%E7%B1%BB%E4%BA%A7%E5%93%81.jpg"></p><hr>
 <p>
 	<strong><span style="font-size: 20px;">六、详细介绍</span></strong></p><p>
 	<strong>0设计文档</strong></p><p style="margin-left: 20px;">
-	<strong><span style="color: rgb(192, 80, 77); --darkreader-inline-color:#c9837e;" data-darkreader-inline-color="">资料里的毕设论文只是预览，具体文档请查看这两个链接</span></strong></p><p style="margin-left: 40px;">[1]：<a href="http://www.cirmall.com/bbs/thread-108231-1-1.html">DIY视频遥控小车</a></p><p style="margin-left: 40px;">[2]：<a href="http://www.cirmall.com/bbs/thread-108248-1-1.html">DIY远程视频遥控小车（附件：论文）</a></p><p>
+	<strong><span style="color: rgb(192, 80, 77); --darkreader-inline-color:#c9837e;" data-darkreader-inline-color="">资料里的毕设论文只是预览，具体文档请查看这两个链接</span></strong></p><p style="margin-left: 40px;">[1]：<a href="https://forum.mianbaoban.cn/topic/72289_1_1.html">AgoraRTC+旧安卓手机+51单片机红外遥控小车=远程视频遥控小车</a></p><p style="margin-left: 40px;">[2]：<a href="http://mc.dfrobot.com.cn/thread-297325-1-1.html">用51单片机和旧手机DIY远程视频监控小车（附论文PDF文件）</a></p><p>
 	<strong>1相关技术</strong></p><p style="margin-left: 20px;">
 	Android摄像头自定义相机开发、Android人脸检测(FaceDetector)API开发、Android红外遥控开发、Android网络实时音视频传输开发、单片机红外解码及电机控制 。</p><p style="margin-left: 20px;">基于安卓的视频控制小车利用了能发射红外信号的安卓旧手机作为核心，通过WiFi将手机或电脑监控端与车载手机控制端相连接，继而间接实现手机或电脑监控端对小车的控制。</p><p style="margin-left: 20px;">
 	通过手机或电脑端向手机发送指令，然后手机执行指令向小车发射红外信号进行相应控制，并调用车载手机摄像头将小车前方的图像信息回传给手机或电脑监控端。</p><p style="margin-left: 20px;">
@@ -40,11 +40,11 @@
 <p style="margin-left: 40px;">
 	<strong><span style="color: rgb(192, 80, 77); --darkreader-inline-color:#c9837e;" data-darkreader-inline-color="">特别说明</span></strong>：车载手机通过红外遥控小车，虽然红外的遥控的控制距离只有10m左右，无法绕过障碍物进行遥控。但发射红外遥控信号的手机就架在小车上，可以将手机的红外发射器和红外接收器放在一块固定住。虽然并不是所有的安卓手机都有红外发射器，但都有3.5mm的耳机接口，红外信号的38kHz频率在音频范围内，可以用耳机接口外接的红外发光二极管发射红外遥控信号。如果使用蓝牙来完成对小车的控制，小车上需要配备蓝牙模块与手机进行配对通信。而且并不是所有的手机都支持蓝牙，早期的一些安卓智能手机就不支持蓝牙。而且蓝牙需要配对连接，红外遥控无需配对连接，省去等待时间。相比蓝牙模块，红外模块成本更低。所以采用红外遥控模式。</p><hr><p><b style="background-color: initial; --darkreader-inline-bgcolor: initial;" data-darkreader-inline-bgcolor=""><span style="font-size: 18px;">下面是远程手机端演示</span></b></p>
 
-[![Watch the video](https://github.com/RoachWZ/AI-in-RTC_ProgrammingChallenge/blob/master/ChallengeProject/Agora-Androidcar-v1.2/photo/super_car.png)](https://player.bilibili.com/player.html?aid=62053730&cid=107876643&page=2")
+[![Watch the video](https://github.com/RoachWZ/AI-in-RTC_ProgrammingChallenge/blob/master/ChallengeProject/Agora-Androidcar-v1.2/photo/bf.png)](https://player.bilibili.com/player.html?aid=62053730&cid=107876643&page=2")
 
 <p><strong><span style="font-size: 18px;">下面是远程电脑端演示</span></strong></p>
 
-[![Watch the video](https://github.com/RoachWZ/AI-in-RTC_ProgrammingChallenge/blob/master/ChallengeProject/Agora-Androidcar-v1.2/photo/super_car2.png)](https://player.bilibili.com/player.html?aid=62053730&cid=107876643&page=1")
+[![Watch the video](https://github.com/RoachWZ/AI-in-RTC_ProgrammingChallenge/blob/master/ChallengeProject/Agora-Androidcar-v1.2/photo/bf.png)](https://player.bilibili.com/player.html?aid=62053730&cid=107876643&page=1")
 
 <p><strong><span style="font-size: 20px;"><br></span></strong></p><p>
 	<strong><span style="font-size: 20px;">七、 参考文献</span></strong></p><p style="margin-left: 20px;">
