@@ -32,7 +32,7 @@
 <p>
 	<strong><span style="font-size: 20px;">六、详细介绍</span></strong></p><p>
 	<strong>0设计文档</strong></p><p style="margin-left: 20px;">
-	<strong><span style="color: rgb(192, 80, 77); --darkreader-inline-color:#c9837e;" data-darkreader-inline-color="">资料里的毕设论文只是预览，具体文档请查看这两个链接</span></strong></p><p style="margin-left: 40px;">[1]：<a href="https://forum.mianbaoban.cn/topic/72289_1_1.html">AgoraRTC+旧安卓手机+51单片机红外遥控小车=远程视频遥控小车</a></p><p style="margin-left: 40px;">[2]：<a href="http://mc.dfrobot.com.cn/thread-297325-1-1.html">用51单片机和旧手机DIY远程视频监控小车（附论文PDF文件）</a></p><p>
+	<strong><span style="color: rgb(192, 80, 77); --darkreader-inline-color:#c9837e;" data-darkreader-inline-color="">这里只是简单介绍，更多内容请查看这两个链接</span></strong></p><p style="margin-left: 40px;">[1]：<a href="https://forum.mianbaoban.cn/topic/72289_1_1.html">AgoraRTC+旧安卓手机+51单片机红外遥控小车=远程视频遥控小车</a></p><p style="margin-left: 40px;">[2]：<a href="http://mc.dfrobot.com.cn/thread-297325-1-1.html">用51单片机和旧手机DIY远程视频监控小车（附论文PDF文件）</a></p><p>
 	<strong>1相关技术</strong></p><p style="margin-left: 20px;">
 	Android摄像头自定义相机开发、Android人脸检测(FaceDetector)API开发、Android红外遥控开发、Android网络实时音视频传输开发、单片机红外解码及电机控制 。</p><p style="margin-left: 20px;">基于安卓的视频控制小车利用了能发射红外信号的安卓旧手机作为核心，通过WiFi将手机或电脑监控端与车载手机控制端相连接，继而间接实现手机或电脑监控端对小车的控制。</p><p style="margin-left: 20px;">
 	通过手机或电脑端向手机发送指令，然后手机执行指令向小车发射红外信号进行相应控制，并调用车载手机摄像头将小车前方的图像信息回传给手机或电脑监控端。</p><p style="margin-left: 20px;">
