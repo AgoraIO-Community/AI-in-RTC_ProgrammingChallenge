@@ -8,6 +8,8 @@
 + KEIL(编译软件)
 + STC_ISP(烧写软件)
 
+![super_car3](https://github.com/RoachWZ/AI-in-RTC_ProgrammingChallenge/blob/master/ChallengeProject/Agora-Androidcar-v1.2/photo/super_car3.png)
+
 所需的硬件清单
 
 + STC89C52RC最小系统(单片机控制核心)
@@ -22,4 +24,3 @@
 
 ![系统框图](https://github.com/RoachWZ/AI-in-RTC_ProgrammingChallenge/blob/master/ChallengeProject/Agora-Androidcar-v1.2/photo/xtkt.png)
 ![super_car](https://github.com/RoachWZ/AI-in-RTC_ProgrammingChallenge/blob/master/ChallengeProject/Agora-Androidcar-v1.2/photo/super_car.png)
-![super_car3](https://github.com/RoachWZ/AI-in-RTC_ProgrammingChallenge/blob/master/ChallengeProject/Agora-Androidcar-v1.2/photo/super_car3.png)
