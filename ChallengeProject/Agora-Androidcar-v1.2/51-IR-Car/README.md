@@ -20,5 +20,5 @@
 + 杜邦线若干
 + 车载手机支架（有车一族，不用的车载手机支架可以利用）
 
-![Autonomous Android Vehicle (AAV)](https://github.com/RoachWZ/AI-in-RTC_ProgrammingChallenge/blob/master/ChallengeProject/Agora-Androidcar-v1.2/photo/xtkt.png)
+![系统框图](https://github.com/RoachWZ/AI-in-RTC_ProgrammingChallenge/blob/master/ChallengeProject/Agora-Androidcar-v1.2/photo/xtkt.png)
 
