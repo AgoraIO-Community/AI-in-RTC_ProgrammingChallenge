@@ -78,11 +78,11 @@ WSGI_APPLICATION = 'JLingWeb.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'JLing',
-        'USER': 'test',
-        'PASSWORD': '123456',
-        'HOST': '47.107.56.104',
-        'PORT': '3306',
+        'NAME': '***',
+        'USER': '***',
+        'PASSWORD': '***',
+        'HOST': '***',
+        'PORT': '***',
     }
 }
 

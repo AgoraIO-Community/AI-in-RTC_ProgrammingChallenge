@@ -1,4 +1,5 @@
 lib-cov
+*.pyc
 *.seed
 *.log
 *.csv
