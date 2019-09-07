@@ -15,11 +15,14 @@ Including another URLconf
 """
 from django.urls import path
 from JLing import views
+from JLing import tests
 
 urlpatterns = [
     path('', views.index),
     path('index/', views.index),
     path('register/', views.register),
     path('signIn/', views.sign_In),
-    path('signUp/', views.sign_Up),
+    path('testpush/', tests.testpush),
+    path('testrecv/', tests.testrecv),
+    path('testmsg/', tests.testmsg),
 ]

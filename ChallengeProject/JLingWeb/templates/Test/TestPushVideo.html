@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <script type""text/javascript" src="./AgoraRTCSDK-2.8.0.js"></script>
+    <script>
+        var APPID='0ccd38ee0fe749789a336f9901cf910b';
+        var CHCHANNEL_KEY=null;
+        var CHANNEL_NAME='123456';
+        var UID='1234';
+        
+        var client = AgoraRTC.createClient({mode: 'live'});
+        
+        client.init(APPID, function(){console.log("AgoraRTC client initialized");}, function(err){console.log("AgoraRTC client init failed", err);});
+        
+        client.join(CHCHANNEL_KEY,CHANNEL_NAME,null, function(UID) {console.log("User " + UID + " join channel successfully");}, function(err) {console.log("Join channel failed", err);});
+        
+        function push(){
+            localStream = AgoraRTC.createStream({streamID: UID, audio: true,  video: true, screen: false});
+            localStream.setVideoProfile('720p_3');
+            localStream.on("accessAllowed", function() {console.log("accessAllowed");});
+            localStream.on("accessDenied", function() {console.log("accessDenied");});
+            
+            localStream.init(function(){
+                console.log("getUserMedia successfully");
+                localStream.play('agora_local');
+                client.publish(localStream, function (err) {console.log("Publish local stream error: " + err);});
+                client.on('stream-published', function (evt) {console.log("Publish local stream successfully");});
+            });
+        }
+    </script>
+</head>
+<body>
+<input type="button" name="confirmAlter" value="push" onclick="push()"/>
+<div>收到消息：</div>
+<div id="video" style="margin:0 auto;">
+    <div id="agora_local" style="float:right;width:210px;height:147px;display:inline-block;">video</div>
+</div>
+</body>
+</html>

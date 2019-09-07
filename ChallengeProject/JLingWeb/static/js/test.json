@@ -1,0 +1,44 @@
+{
+  "keyValue": [
+    {
+      "key": "CPU",
+      "value": 30
+    },
+    {
+      "key": "DPU",
+      "value": 50
+    },
+    {
+      "key": "GPU",
+      "value": 70
+    },
+    {
+      "key": "内存",
+      "value": 95
+    },
+    {
+      "key": "CPU",
+      "value": 30
+    },
+    {
+      "key": "DPU",
+      "value": 50
+    },
+    {
+      "key": "GPU",
+      "value": 70
+    },
+    {
+      "key": "内存",
+      "value": 90
+    } ,
+    {
+      "key": "内存",
+      "value": 95
+    } ,
+    {
+      "key": "内存",
+      "value": 80
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+@charset "UTF-8";
+*{margin:0;padding:0;list-style-type:none;}
+        a,img{border:0;}
+        body{font:12px/180% Arial, Helvetica, sans-serif, "新宋体";}
+        .wrap{margin:30px 0}
+        .wrap p{padding:10px 0}
+.chk_4 {
+    display: none;
+}
+#table{
+	top:5px;
+  	margin:0 auto;
+  	height:auto;
+  	width:auto;
+  	}
+	#table thead, #table tr {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #fff;
+	}
+	#table {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #fff;
+	}
+	
+	/* Padding and font style */
+	#table td, #table th {
+	padding: 5px 10px;
+	font-size: 14px;
+	font-family: "宋体";
+	color: #000000;
+	}
+	
+	/* Alternating background colors */
+	#table tr:nth-child(even) {
+	background: #fff;
+	}
+	#table tr:nth-child(odd) {
+	background: #FFF;
+	}
+	
+	.chk_4 + label {
+	background-color: #FFF;
+	padding: 11px 9px;
+	border-radius: 7px;
+	display: inline-block;
+	position: relative;
+	margin-right: 30px;
+	background: #F7836D;
+	width: 58px;
+	height: 10px;
+	box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.1), 0 0 10px rgba(245, 146, 146, 0.4);
+}
+
+.chk_4 + label:before {
+	content: ' ';
+	position: absolute;
+	background: #FFF;
+	top: 0px;
+	z-index: 99999;
+	left: 0px;
+	width: 24px;
+	color: #FFF;
+	height: 32px;
+	border-radius: 7px;
+	box-shadow: 0 0 1px rgba(0,0,0,0.6);
+}
+
+.chk_4 + label:after {
+	content: '关闭';	
+	position: absolute;
+	top: 2px;
+	left: 24px;
+	font-size: 14px;
+	color: white;
+	font-weight: bold;
+	left: 8px;
+	padding: 6px;
+	top: 2px;
+	border-radius: 100px;
+}
+
+.chk_4:checked + label {
+	background: #67A5DF;
+	box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.1), 0 0 10px rgba(146, 196, 245, 0.4);
+}
+
+.chk_4:checked + label:after {
+	content: '开启';
+	left: 10px;
+}
+
+.chk_4:checked + label:before {
+	content: ' ';
+	position: absolute;
+	z-index: 99999;
+	left: 52px;
+}
+
+
+.chk_4 + label:after {
+	left: 35px;	
+}	
+
+#p1{
+	text-align:left;
+	width:100px;
+	height:10px;
+	padding-top:2px;
+	padding-bottom:auto;
+}
+	

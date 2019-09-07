@@ -4,7 +4,7 @@ from JLing import models
 
 # Create your views here.
 def index(request):
-    return render(request, "login.html")
+    return render(request, "loginTest.html")
 
 
 def register(request):
@@ -19,7 +19,7 @@ def sign_In(request):
         user = models.UserTable.objects.filter(Email__exact=email, Password__exact=password)
     except:
         print("failed")
-        return render(request, 'login.html')
+        return render(request, 'loginTest.html')
     if user:
         print("signIn success")
         # 登录成功
@@ -30,7 +30,7 @@ def sign_In(request):
         return render(request, 'test.html')
         # 如果是GET请求，就说明是用户刚开始登录，使用URL直接进入登录页面的
     else:
-        return render(request, 'login.html')
+        return render(request, 'loginTest.html')
 
 
 def sign_Up(request):
@@ -46,7 +46,7 @@ def sign_Up(request):
         return render(request, 'register.html')
     if user:
         print("signUp success")
-        return render(request, 'login.html')
+        return render(request, 'loginTest.html')
         # 如果是GET请求，就说明是用户刚开始登录，使用URL直接进入登录页面的
     else:
         return render(request, 'register.html')

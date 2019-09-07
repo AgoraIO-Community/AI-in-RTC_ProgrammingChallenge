@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <script type="text/javascript" src="agora-rtm-sdk-1.0.0.js"></script>
+    <script type""text/javascript" src="AgoraRTCSDK-2.8.0.js"></script>
+    <script>
+        var myID='1234';
+        var userID='12345'
+        var appID='8a9a81ca98f4430d84f18afb1227e47c'
+        var TOKEN_OR_KEY='0068a9a81ca98f4430d84f18afb1227e47cIABoXWdoK1oEQS7ni0qrmZqd2ffrxbdAWJh2iWt8rdbg4Bw69csAAAAAEAA7t9UM7fpUXQEAAQDs+lRd';
+        var CHANNEL_NAME='123456'
+        
+        //初始化MSG
+        const MsgClient=AgoraRTM.createInstance(appID);
+        MsgClient.on('ConnectionStateChanged', (newState, reason)=>{console.log('on connection state changed to ' + newState + ' reason: ' + reason);});
+        //登录MSG
+        MsgClient.login({ token: null,uid:myID}).then(()=>{console.log('AgoraRTM client login success');}).catch(err => {console.log('AgoraRTM client login failure', err);});
+        //初始化Video
+        var VideoClient = AgoraRTC.createClient({mode: 'live', codec: "h264"});
+        VideoClient.init(appID,function(){console.log("AgoraRTC client initialized");},function(err){console.log("AgoraRTC client init failed",err);});
+        //加入Video频道
+        VideoClient.join(TOKEN_OR_KEY,CHANNEL_NAME,myID,function(myID)
+                    {console.log("User " + myID + " join channel successfully");
+                    },function(err){console.log("Join channel failed", err);}
+                    );            
+    </script>
+    <script>
+        function sendMsg() {
+            MsgClient.sendMessageToPeer({text: 'test peer message'}, userID,)
+                .then(sendResult => {
+                    if (sendResult.hasPeerReceived) {
+                        /* 远端用户收到消息的处理逻辑 */
+                    } else {
+                        /* 服务器已接收、但远端用户不可达的处理逻辑 */
+                    }
+                }).catch(error => {/* 发送失败的处理逻辑 */
+            });
+        }
+        function recvMsg(){
+            MsgClient.on('MessageFromPeer', ({ text }, peerId) => { 
+            // text 为消息文本，peerId 是消息发送方ID
+            /* 收到点对点消息的处理逻辑 */
+            document.getElementById("myDiv").innerHTML=text;
+            
+            });
+            
+        }
+        function initVideo(){
+            VideoClient.on('stream-added', function (evt) {
+                var stream = evt.stream;
+                console.log("New stream added: " + stream.getId());
+                client.subscribe(stream, function (err) {console.log("Subscribe stream failed", err);});
+                });
+            VideoClient.on('stream-subscribed', function (evt) {
+                var remoteStream = evt.stream;
+                console.log("Subscribe remote stream successfully: " + remoteStream.getId());remoteStream.play('agora_remote' + remoteStream.getId());
+                });
+        }
+        function recvVideo(){
+            // 这里使用agora_local作为dom元素的id。
+            localStream.init(function() {console.log("getUserMedia successfully");localStream.play('agora_local');}, function (err) {console.log("getUserMedia failed", err);});
+        }
+    </script>
+    
+</head>
+<body>
+<input type="button" name="confirmAlter" value="send MSG" onclick="sendMsg()"/>
+<button type="button" onclick="recvMsg()">recv MSG</button>
+<div>收到消息：</div> <div id="myDiv">recv</div>
+
+<br>
+<br>
+
+<input type="button" name="confirmAlter" value="init Video" onclick="initVideo()"/>
+<button type="button" onclick="recvVideo()">recv Video</button>
+<div id="video" style="margin:0 auto;">
+    <div id="agora_local" style="float:right;width:210px;height:147px;display:inline-block;"></div>
+</div>
+</body>
+</html>

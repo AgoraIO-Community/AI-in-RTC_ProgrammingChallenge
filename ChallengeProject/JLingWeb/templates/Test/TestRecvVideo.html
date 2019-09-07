@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <script type""text/javascript" src="./AgoraRTCSDK-2.8.0.js"></script>
+    <script>
+        var APPID='0ccd38ee0fe749789a336f9901cf910b';
+        var CHCHANNEL_KEY=null;
+        var CHANNEL_NAME='123456';
+        var UID='12345';
+        
+        var client = AgoraRTC.createClient({mode: 'live'});
+        
+        client.init(APPID, function(){console.log("AgoraRTC client initialized");}, function(err){console.log("AgoraRTC client init failed", err);});
+        
+        client.join(CHCHANNEL_KEY,CHANNEL_NAME,null, function(UID) {console.log("User " + UID + " join channel successfully");}, function(err) {console.log("Join channel failed", err);});
+        
+        function recv(){
+            console.log("Start mon");
+            
+            client.on('stream-added', function (evt) {var stream = evt.stream;console.log("New stream added: " + stream.getId());client.subscribe(stream, function (err) {console.log("Subscribe stream failed", err);});
+            });
+            
+            client.on('stream-subscribed',function(evt){
+                var remoteStream = evt.stream;
+                console.log("Subscribe remote stream successfully: " + remoteStream.getId());
+                
+                remoteStream.play('agora_remote');
+                });
+            
+            // 这里使用agora_remote + remoteStream.getId()作为dom元素的id。            
+        }
+    </script>
+</head>
+<body>
+<input type="button" name="confirmAlter" value="recv" onclick="recv()"/>
+<div>收到消息：</div>
+<div id="video" style="margin:0 auto;">
+    <div id="agora_remote" style="float:right;width:210px;height:147px;display:inline-block;">video</div>
+</div>
+</body>
+</html>
