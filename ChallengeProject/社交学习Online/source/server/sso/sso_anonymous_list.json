@@ -1,0 +1,18 @@
+[
+  "/oauth/token"
+  , "/oauth/refreshtoken"
+
+
+
+
+  , "/rest/userinfo_detail"
+  , "/rest/inituserinfo"
+
+  , "/rest/homepage/focusmaps_list_get"
+  , "/rest/homepage/courses_list_get"
+  , "/rest/message/gmessages_list_get"
+  , "/rest/message/gmessages_detail_get"
+
+  , "/rest/lessonlives"
+  , "/rest/ranklist"
+]
