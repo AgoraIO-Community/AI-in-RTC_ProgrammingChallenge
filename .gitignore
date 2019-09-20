@@ -1,3 +1,8 @@
+*.o
+*.txt
+*.log
+*.dat
+__pycache__/
 lib-cov
 *.pyc
 *.seed
