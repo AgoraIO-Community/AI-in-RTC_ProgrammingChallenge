@@ -67,6 +67,47 @@ Guidoge方案中涉及到的许多技术都与Deep Learning，Computer Vision密
 
 第一种方案利用Depth信息使用梯度估计的方法结合团队设计的障碍物预警算法实现路况描述、障碍的判定；第二种方案是在能获取相机内参的情况下，将Depth信息还原为Point Cloud，再采用CVPR2019近期刊登的论文PointRCNN: 3D Object Proposal Generation and Detection from Point Cloud（Shi S , Wang X , Li H）的开源版本结合团队设计的障碍物预警算法实现实现障碍物识别、预警。在条件允许前提下两种方案可以同时执行。
 
+## 4.团队介绍及进度
+
+团队名称：FemtoTech
+
+名称 | 邮箱
+--- | ---
+[nekowink](https://github.com/nekowink) | eachandall@163.com
+[eEhyQx](https://github.com/eEhyQx) | qxzhang.work@gmail.com
+
+您可以通过邮箱或QQ（61337542）联系队长nekowink。
+
+在我们于9/22知晓AI in RTC编程挑战赛后，我们于当日立项并启动模型验证、Demo部署与宣传片摄制等流程。我们已在上海科技大学校园内多处验证了方案的可靠性，并进行了实地实时测试，总耗时不超过七天。
+
+值得一提地是，在处理深度预测的模型之外，我们同时应用了最新的语音合成研究成果。您可能会发现，宣传片中的配音足够地流畅自然。所有片段是由神经网络进行合成的。
+
+我们团队计划在决赛答辩前设计并完成一整套结合对象识别、场景描述与语音反馈的辅助应用，部署在Android与iOS平台，并最终实现上述所有设计目标。请期待我们的成果！
+
+## 5.编译指南
+
+为了方便您的测试，我们的服务端通过Sanic框架直接运行在本地，您可以在/ChallengeProject/Guidoge/目录下运行以下指令，来完成环境配置：
+
+请注意：您需要支持NVIDIA CUDA技术的硬件。以下命令在Windows 10 version 1903、Python 3.7、CUDA 10.0、PyTorch 1.2下测试通过。
+
+- 安装运行神经网络、图像处理与前端需要的依赖项, `pip install numpy matplotlib Pillow sanic`
+
+- 配置深度学习PyTorch框架, 您可以参见[PyTorch](https://pytorch.org/get-started/locally/)官网上的相关指示。
+
+完成后，您可以在当前目录下执行`python server.html`与`python -m http.server 8080`来启动服务器。在本地浏览器输入[http://localhost:8080/server.html](http://localhost:8080/server.html)即可开始感受深度学习与WebRTC技术的神奇！
+
+## 6.Demo运行指南
+
+您需要一台在公网并开启了https的服务器，在其上部署Agora Web SDK Sample。当您使用移动设备或带有摄像头的笔记本/平板访问该Sample，并输入AppID、勾选Host发布视频后，您可以在本地的浏览器输入对应的信息并连接。若顺利，您可以看到本地服务器上呈现出[宣传视频](https://www.bilibili.com/video/av69334959)片头中的界面。
+
+**注记**
+
+- 基于调试需求，本地访问无需https，但WebRTC协议要求访问其他服务器时必须建立在加密连接上。
+
+- 为了更好的兼容性，推荐使用Chrome与其移动版进行测试。
+
+- 服务器和客户端不需要在同一网段下（我们通过声网Agora.io提供的可靠技术进行直播）。
+
 ## Reference
 
 Godard, Clément, Mac Aodha O , Firman M , et al. Digging Into Self-Supervised Monocular Depth Estimation[J]. 2018.
