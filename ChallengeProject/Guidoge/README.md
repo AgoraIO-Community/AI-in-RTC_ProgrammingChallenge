@@ -78,9 +78,9 @@ Guidoge方案中涉及到的许多技术都与Deep Learning，Computer Vision密
 
 您可以通过邮箱或QQ（61337542）联系队长nekowink。
 
-在我们于9/22知晓AI in RTC编程挑战赛后，我们于当日立项并启动模型验证、Demo部署与宣传片摄制等流程。我们已在上海科技大学校园内多处验证了方案的可靠性，并进行了实地实时测试，总耗时不超过七天。
+在我们于9/22知晓AI in RTC编程挑战赛后，我们于当日立项并启动模型验证、Demo部署与宣传片摄制等流程。我们已在上海科技大学校园内多处验证了方案的可靠性，并进行了实时、实地的测试。
 
-值得一提地是，在处理深度预测的模型之外，我们同时应用了最新的语音合成研究成果。您可能会发现，宣传片中的配音足够地流畅自然。所有片段是由神经网络进行合成的。
+值得一提的是，在处理深度预测的模型之外，我们还应用了最新的语音合成研究成果。您可能会发现，宣传片中的配音足够的流畅自然。所有片段是由神经网络进行合成的。
 
 我们团队计划在决赛答辩前设计并完成一整套结合对象识别、场景描述与语音反馈的辅助应用，部署在Android与iOS平台，并最终实现上述所有设计目标。请期待我们的成果！
 
@@ -94,7 +94,7 @@ Guidoge方案中涉及到的许多技术都与Deep Learning，Computer Vision密
 
 - 配置深度学习PyTorch框架, 您可以参见[PyTorch](https://pytorch.org/get-started/locally/)官网上的相关指示。
 
-完成后，您可以在当前目录下执行`python server.html`与`python -m http.server 8080`来启动服务器。在本地浏览器输入[http://localhost:8080/server.html](http://localhost:8080/server.html)即可开始感受深度学习与WebRTC技术的神奇！
+完成后，您可以在当前目录下执行`python server.html`与`python -m http.server 8080`来启动服务器。在本地浏览器输入[http://localhost:8080/server.html](http://localhost:8080/server.html)，即可开始感受深度学习与WebRTC技术的神奇！
 
 ## 6.Demo运行指南
 
@@ -107,6 +107,10 @@ Guidoge方案中涉及到的许多技术都与Deep Learning，Computer Vision密
 - 为了更好的兼容性，推荐使用Chrome与其移动版进行测试。
 
 - 服务器和客户端不需要在同一网段下（我们通过声网Agora.io提供的可靠技术进行直播）。
+
+## Special Thanks
+
+[![AGORA.IO](https://www.agora.io/en/wp-content/uploads/2019/06/agoralightblue-1.png)](https://www.agora.io/)
 
 ## Reference
 
