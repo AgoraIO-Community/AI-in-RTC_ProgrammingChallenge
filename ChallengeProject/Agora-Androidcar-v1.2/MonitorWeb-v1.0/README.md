@@ -1,4 +1,3 @@
-
 # OpenDuoLive-Web
 
 This Agora Tutorial is an open-source demo that will help you get live video broadcasting and chat messaging integrated directly into your JS applications using the Agora Video SDK + Signaling SDK.
@@ -8,6 +7,7 @@ With this sample app, you can:
 - Join broadcast as an broadcasting member
 - Join broadcast as an audience member
 - Chat with broadcasters and viewers
+- 控制小车的移动
 
 我只是在这个项目的基础上加了键盘控制的js语句
 
