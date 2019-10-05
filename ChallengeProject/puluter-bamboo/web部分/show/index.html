@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>辩 · 竹</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="./logo1.png">
+</head>
+<body class="body1" oncontextmenu="return false;" onselectstart="return false"  onbeforeunload="checkLeave()">
+<div class="audio">
+    <audio style="display:none; height: 0" id="mic-1" preload="auto" src="./assets/1.wav" loop="loop"></audio>
+    <audio style="display:none; height: 0" id="mic-2" preload="auto" src="./assets/2.wav" loop="loop"></audio>
+    <audio style="display:none; height: 0" id="mic-3" preload="auto" src="./assets/3.wav" loop="loop"></audio>
+</div>
+<div class="mainWrapper">
+    <div class="up">
+        <p class="teamName teamNameC" id="teamName-C">皮卡丘队</p>
+        <p class="teamName teamNameCC" id="teamName-CC">于卓浩队</p>
+    </div>
+    <div class="txt">
+        <p class="title" id="title">老师为了替死去的学生找出真相而挟持全班同学作为人质的行为应不应该被接受</p>
+        <p class="status" id="status">反方二辩 · 质询 · 正方一辩</p>
+        <p class="bigTime" id="mainTimer">00 : 00</p>
+        <div class="timeSet invisible" id="freeTimerId">
+            <p class="CTime" id="CTime">01 : 37</p>
+            <p class="CCTime" id="CCTime">01 : 37</p>
+        </div>
+    </div>
+    <div class="images">
+        <div class="imgBox imgBox-C-1 a-active">
+            <img src="./assets/img/pic-1.png" alt="" class="img-b" id="img-C-1">
+            <div class="black"></div>
+            <p class="position" id="pos-C-1">正方一辩</p>
+            <p class="name" id="name-C-1">于卓浩</p>
+        </div>
+        <div class="imgBox imgBox-C-2">
+            <img src="./assets/img/pic-1.png" alt="" class="img-b" id="img-C-2">
+            <div class="black"></div>
+            <p class="position" id="pos-C-2">正方二辩</p>
+            <p class="name" id="name-C-2">于卓浩</p>
+        </div>
+        <div class="imgBox imgBox-C-3">
+            <img src="./assets/img/pic-1.png" alt="" class="img-b" id="img-C-3">
+            <div class="black"></div>
+            <p class="position" id="pos-C-3">正方三辩</p>
+            <p class="name" id="name-C-3">于卓浩</p>
+        </div>
+        <div class="imgBox imgBox-C-4">
+            <img src="./assets/img/pic-1.png" alt="" class="img-b" id="img-C-4">
+            <div class="black"></div>
+            <p class="position" id="pos-C-4">正方四辩</p>
+            <p class="name" id="name-C-4">于卓浩</p>
+        </div>
+        <div class="imgBox imgBox-CC-1">
+            <img src="./assets/img/pic-1.png" alt="" class="img-b" id="img-CC-1">
+            <div class="black"></div>
+            <p class="position" id="pos-CC-1">反方一辩</p>
+            <p class="name" id="name-CC-1">于卓浩</p>
+        </div>
+        <div class="imgBox imgBox-CC-2">
+            <img src="./assets/img/pic-1.png" alt="" class="img-b" id="img-CC-2">
+            <div class="black"></div>
+            <p class="position" id="pos-CC-2">反方二辩</p>
+            <p class="name" id="name-CC-2">于卓浩</p>
+        </div>
+        <div class="imgBox imgBox-CC-3">
+            <img src="./assets/img/pic-1.png" alt="" class="img-b" id="img-CC-3">
+            <div class="black"></div>
+            <p class="position" id="pos-CC-3">反方三辩</p>
+            <p class="name" id="name-CC-3">于卓浩</p>
+        </div>
+        <div class="imgBox imgBox-CC-4">
+            <img src="./assets/img/pic-1.png" alt="" class="img-b" id="img-CC-4">
+            <div class="black"></div>
+            <p class="position" id="pos-CC-4">反方四辩</p>
+            <p class="name" id="name-CC-4">于卓浩</p>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="main.js"></script>
+<script>
+    function checkLeave(){
+        event.returnValue="确定离开当前页面吗？";
+    }
+</script>
+</body>
+</html>
