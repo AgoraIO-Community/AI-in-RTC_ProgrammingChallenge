@@ -18,14 +18,20 @@ $appId=trim($_GET['APPID']);
 //echo '<h4>APPID: ' . $appId . PHP_EOL .'</h4>';
 $channel=trim($_GET['channel']);
 //echo '<h4>CHANNEL ' . $channel . PHP_EOL .'</h4>';
-$certificate=$_GET['certificate'];
+$userAccount=trim(strval(msectime()));
+if($_GET['certificate']==''){
+	$certificate=null;
+	$userAccount=null;
+}else{
+	$certificate=$_GET['certificate'];
+}
 //echo '<h4>CERTIFICATE ' . $certificate . PHP_EOL .'</h4>';
 //$userAccount=trim(strval(msectime()));
-$userUid=msectime();
+
 //echo '<h4>UID ' . $userUid . PHP_EOL .'</h4>'; 
 //$token=trim(str_replace(' ','',RtcTokenBuilder::buildTokenWithUserAccount($appId, $certificate, $channel, $userAccount, 1, 0)));
 if(!empty($certificate)){
-	$token = RtcTokenBuilder::buildTokenWithUid('8cdeee9db3d544659b9c6065a9cf8dcf', '7eb8c7eff4424ae79419bf721162b509', '1000', $userUid, 1, 0);
+	$token = RtcTokenBuilder::buildTokenWithUserAccount($appId, $certificate, $channel, $userAccount, 1, 0);
 }else{
 	$token='';
 }
@@ -52,7 +58,7 @@ if(!empty($certificate)){
 <div class="panel-body">
 <input id="appId" type="hidden" value="<?php echo $appId;?>"></input>
 <input id="channel" type="hidden" value="<?php echo $channel;?>" ></input>
-<input id="uid" type="hidden" value="<?php echo $userUid;?>" ></input>
+<input id="uid" type="hidden" value="<?php echo $userAccount;?>" ></input>
 <input id="certificate" type="hidden" value="<?php echo $certificate;?>"></input>
 <input id="token" type="hidden" value="<?php echo $token;?>"></input>
 Host: <input id="video" type="checkbox" checked></input>
@@ -137,7 +143,7 @@ function join() {
     console.log("AgoraRTC client initialized");
 	//alert('token:'+token.value+'，channel：'+channel.value);
 	rtc.client.setClientRole('host');
-    rtc.client.join(option.token, channel.value, null, function(uid) {
+    rtc.client.join(option.token, channel.value,  option.uid ? option.uid : null, function(uid) {
       console.log("User " + uid + " join channel successfully");
 
       if (document.getElementById("video").checked) {

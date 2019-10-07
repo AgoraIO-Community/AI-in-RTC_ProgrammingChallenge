@@ -1,4 +1,5 @@
 #请用markdownPad打开此文件，请用markdownPad打开此文件，请用markdownPad打开此文件！
+#完整视频教程请点击→ [部署视频教程](https://v.youku.com/v_show/id_XNDM4OTIwNjU4MA==.html?spm=a2h0k.11417342.soresults.dposter)
 ##一、作品介绍
 该作品是一个可以发布直播的内容发布系统，通过系统后台发布直播，同时对直播进行播控，在首页显示直播链接，点击进去即可观看直播。
 该系统在PHPCMS上进行，因此需要配置好lamp或者wamp的环境并且安装PHPCMS。
@@ -48,3 +49,4 @@
 
 创建好之后，在首页轮播图既可以看到相应内容，点击进去之后，即可观看直播。首页如下图所示：
 ![首页图.png](https://upload-images.jianshu.io/upload_images/7792042-18316fe7ab7a9dea.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+#完整视频教程请点击→ [部署视频教程](https://v.youku.com/v_show/id_XNDM4OTIwNjU4MA==.html?spm=a2h0k.11417342.soresults.dposter)

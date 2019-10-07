@@ -282,7 +282,12 @@ function msectime(){
 
 $appId=$APPID;
 $channel=strval($channel);
-$certificate=$certificate;
+if($certificate==''){
+    $certificate=null;
+}else{
+    $certificate=$certificate;
+}
+
 $userAccount=trim(strval(msectime()));
 if(!empty($certificate)){
     $token=trim(str_replace(' ','',RtcTokenBuilder::buildTokenWithUserAccount($appId, $certificate, $channel, $userAccount, 2, 0)));
@@ -299,11 +304,11 @@ if(!empty($certificate)){
 ?>
 
 			<div id="pages" class="text-c">{$infomation}</div>
-			<input id="appId" type="text" value="<?php echo $APPID;?>" disabled="true" size="50"></input></br>
-            <input id="channel" type="text" value="{$channel}" size="50"></input></br>
-			<input id="certificate" type="text" value="{$certificate}" size="50"></input></br>
-			<input id="token" type="text" value="{$token}" size="50"></input></br>
-			<input id="uid" type="text" value="{$userAccount}" size="50"></input></br>
+			<input id="appId" type="hidden" value="<?php echo $APPID;?>" disabled="true" size="50"></input></br>
+            <input id="channel" type="hidden" value="{$channel}" size="50"></input></br>
+			<input id="certificate" type="hidden" value="{$certificate}" size="50"></input></br>
+			<input id="token" type="hidden" value="{$token}" size="50"></input></br>
+			<input id="uid" type="hidden" value="{$userAccount}" size="50"></input></br>
 			<div id="video" style="margin:0 auto;">
 			    <div id="agora_remote" style="float:right;width:210px;height:147px;display:inline-block;"></div>
 			</div>
@@ -482,8 +487,6 @@ $(function(){
 				var channel = $('#channel').val();
 				var token=$('#token').val();
 				
-				alert(APPID);
-                
                 // Initialize the client
 				rtc.client.init(option.appID, function () {
 				    console.log("init success");
@@ -491,7 +494,7 @@ $(function(){
 					rtc.client.setClientRole("audience");
 					
 					// Join a channel
-					rtc.client.join(option.token ? option.token : null, option.channel, option.uid ? +option.uid : null, function (uid) {
+					rtc.client.join(option.token ? option.token : null, option.channel, option.uid ? option.uid : null, function (uid) {
 					    console.log("join channel: " + option.channel + " success, uid: " + uid);
 						rtc.params.uid = uid;
 					}, function(err) {
