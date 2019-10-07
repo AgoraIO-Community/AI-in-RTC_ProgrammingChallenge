@@ -113,7 +113,7 @@ include $this->admin_tpl('header','admin');?>
 		}
 		?></td>
 		<td align='center'><?php echo format::date($r['updatetime'],1);?></td>
-		<td align='center'><a href="javascript:;" onclick="javascript:openwinx('?m=content&c=content&a=edit&catid=<?php echo $catid;?>&id=<?php echo $r['id']?>','')"><?php echo L('edit');?></a> | <a href="javascript:view_comment('<?php echo id_encode('content_'.$catid,$r['id'],$this->siteid);?>','<?php echo safe_replace($r['title']);?>')"><?php echo L('comment');?></a><?php if(isset($r['APPID'])){echo '| <a href="statics/live/brodcastControl.php?APPID='.$r['APPID'].'&certificate='.$r['certificate'].'&chanel='.$r['chanel'].'" target="_blank">播控</a>';}?></td>
+		<td align='center'><a href="javascript:;" onclick="javascript:openwinx('?m=content&c=content&a=edit&catid=<?php echo $catid;?>&id=<?php echo $r['id']?>','')"><?php echo L('edit');?></a> | <a href="javascript:view_comment('<?php echo id_encode('content_'.$catid,$r['id'],$this->siteid);?>','<?php echo safe_replace($r['title']);?>')"><?php echo L('comment');?></a><?php if(isset($r['APPID'])){echo '| <a href="statics/live/brodcastControl.php?APPID='.$r['APPID'].'&certificate='.$r['certificate'].'&channel='.$r['channel'].'" target="_blank">播控</a>';}?></td>
 	</tr>
      <?php }
 	}

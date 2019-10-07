@@ -4,8 +4,9 @@
 <head>
 <title>Agora Web Sample</title>
 <link rel="stylesheet" href="vendor/bootstrap.min.css">
-<!--<script src="AgoraRTCSDK-2.8.0.js"></script>-->
-<script src="live.js"></script>
+<script src="AgoraRTCSDK-2.8.0.js"></script>
+<script src="AgoraRTCSDK-2.9.0.js"></script>
+<!--<script src="live.js"></script>-->
 <script src="vendor/jquery.js"></script>
 </head>
 <?php 
@@ -15,14 +16,14 @@ function msectime(){
 }
 $appId=trim($_GET['APPID']);
 //echo '<h4>APPID: ' . $appId . PHP_EOL .'</h4>';
-$chanel=trim($_GET['chanel']);
-//echo '<h4>CHANNEL ' . $chanel . PHP_EOL .'</h4>';
+$channel=trim($_GET['channel']);
+//echo '<h4>CHANNEL ' . $channel . PHP_EOL .'</h4>';
 $certificate=$_GET['certificate'];
 //echo '<h4>CERTIFICATE ' . $certificate . PHP_EOL .'</h4>';
 //$userAccount=trim(strval(msectime()));
 $userUid=msectime();
 //echo '<h4>UID ' . $userUid . PHP_EOL .'</h4>'; 
-//$token=trim(str_replace(' ','',RtcTokenBuilder::buildTokenWithUserAccount($appId, $certificate, $chanel, $userAccount, 1, 0)));
+//$token=trim(str_replace(' ','',RtcTokenBuilder::buildTokenWithUserAccount($appId, $certificate, $channel, $userAccount, 1, 0)));
 if(!empty($certificate)){
 	$token = RtcTokenBuilder::buildTokenWithUid('8cdeee9db3d544659b9c6065a9cf8dcf', '7eb8c7eff4424ae79419bf721162b509', '1000', $userUid, 1, 0);
 }else{
@@ -50,7 +51,7 @@ if(!empty($certificate)){
 <div id="div_join" class="panel panel-default">
 <div class="panel-body">
 <input id="appId" type="hidden" value="<?php echo $appId;?>"></input>
-<input id="channel" type="hidden" value="<?php echo $chanel;?>" ></input>
+<input id="channel" type="hidden" value="<?php echo $channel;?>" ></input>
 <input id="uid" type="hidden" value="<?php echo $userUid;?>" ></input>
 <input id="certificate" type="hidden" value="<?php echo $certificate;?>"></input>
 <input id="token" type="hidden" value="<?php echo $token;?>"></input>
@@ -130,7 +131,7 @@ function join() {
 	}
 
 	// Create a client
-	rtc.client = AgoraRTC.createClient({mode: "rtc", codec: "h264"});
+	rtc.client = AgoraRTC.createClient({mode: "live", codec: "h264"});
   //alert('appid:'+appId.value);
    rtc.client.init(option.appID, function () {
     console.log("AgoraRTC client initialized");
@@ -163,7 +164,7 @@ function join() {
           console.log("getUserMedia successfully");
           rtc.localStream.play('agora_local');
 
-          rtc.client.publish(localStream, function (err) {
+          rtc.client.publish(rtc.localStream, function (err) {
             console.log("Publish local stream error: " + err);
           });
 
@@ -212,14 +213,14 @@ function join() {
     stream.play('agora_remote' + stream.getId());
   });
 
-  client.on('stream-removed', function (evt) {
+  rtc.client.on('stream-removed', function (evt) {
     var stream = evt.stream;
     stream.stop();
     $('#agora_remote' + stream.getId()).remove();
     console.log("Remote stream is removed " + stream.getId());
   });
 
-  client.on('peer-leave', function (evt) {
+  rtc.client.on('peer-leave', function (evt) {
     var stream = evt.stream;
     if (stream) {
       stream.stop();
@@ -231,7 +232,7 @@ function join() {
 
 function leave() {
   document.getElementById("leave").disabled = true;
-  client.leave(function () {
+  rtc.client.leave(function () {
     console.log("Leavel channel successfully");
   }, function (err) {
     console.log("Leave channel failed");
@@ -241,7 +242,7 @@ function leave() {
 function publish() {
   document.getElementById("publish").disabled = true;
   document.getElementById("unpublish").disabled = false;
-  client.publish(localStream, function (err) {
+  rtc.client.publish(localStream, function (err) {
     console.log("Publish local stream error: " + err);
   });
 }
@@ -249,7 +250,7 @@ function publish() {
 function unpublish() {
   document.getElementById("publish").disabled = false;
   document.getElementById("unpublish").disabled = true;
-  client.unpublish(localStream, function (err) {
+  rtc.client.unpublish(localStream, function (err) {
     console.log("Unpublish local stream failed" + err);
   });
 }

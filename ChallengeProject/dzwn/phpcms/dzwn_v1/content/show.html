@@ -281,13 +281,14 @@ function msectime(){
 }
 
 $appId=$APPID;
-$channel=strval($chanel);
+$channel=strval($channel);
 $certificate=$certificate;
 $userAccount=trim(strval(msectime()));
 if(!empty($certificate)){
     $token=trim(str_replace(' ','',RtcTokenBuilder::buildTokenWithUserAccount($appId, $certificate, $channel, $userAccount, 2, 0)));
 }else{
     $token='';
+	$userAccount=null;
 }
 
 //echo $appId.'<br/>';
@@ -299,11 +300,12 @@ if(!empty($certificate)){
 
 			<div id="pages" class="text-c">{$infomation}</div>
 			<input id="appId" type="text" value="<?php echo $APPID;?>" disabled="true" size="50"></input></br>
-            <input id="channel" type="text" value="{$chanel}" size="50"></input></br>
+            <input id="channel" type="text" value="{$channel}" size="50"></input></br>
 			<input id="certificate" type="text" value="{$certificate}" size="50"></input></br>
 			<input id="token" type="text" value="{$token}" size="50"></input></br>
+			<input id="uid" type="text" value="{$userAccount}" size="50"></input></br>
 			<div id="video" style="margin:0 auto;">
-				<!-- <div id="remote_video_" style="float:right;width:210px;height:147px;display:inline-block;"></div> -->
+			    <div id="agora_remote" style="float:right;width:210px;height:147px;display:inline-block;"></div>
 			</div>
             <p style="margin-bottom:10px">
             <strong>相关热词搜索：</strong>{loop $keywords $keyword}<a href="{APP_PATH}index.php?m=content&c=tag&a=lists&tag={urlencode($keyword)}" class="blue">{$keyword}</a> 	{/loop}
@@ -458,11 +460,19 @@ $(function(){
 				  params: {}
 				};
 				
+				// Options for joining a channel
+				var option = {
+				  appID: $('#appId').val(),
+				  channel: $('#channel').val(),
+				  uid:$('#uid').val(),
+				  token: $('#token').val()
+				}
+				
 				/*
 				 *创建 Client 对象
 				 *用 AgoraRTC.createClient 方法创建 Client 对象，设置 mode 和 codec 。
 				*/
-				client = AgoraRTC.createClient({mode: "rtc", codec: "h264"});
+				rtc.client = AgoraRTC.createClient({mode: "live", codec: "h264"});
 				
 				/*
 				 *初始化 Client 对象
@@ -470,43 +480,57 @@ $(function(){
 				*/
 				var APPID = $('#appId').val();
 				var channel = $('#channel').val();
-				var token = null;
-				if ($('#token').val()!==''){
-				    token=$('#token').val();
-				}
+				var token=$('#token').val();
+				
 				alert(APPID);
-				client.init(APPID, function () {
-					console.log("AgoraRTC client initialized");
-					/*
-					 *加入频道
-					 *初始化 Client 对象完成后， 在成功的回调中调用 client.join 方法
-					*/
-					client.join(token, channel, null, function(uid) {
-						console.log("User " + uid + " join channel successfully");
-						  client.on('stream-added', function (evt) {
-							var stream = evt.stream;
-							console.log("New stream added: " + stream.getId());
-							console.log("Subscribe ", stream);
-							client.subscribe(stream, function (err) {
-							  console.log("Subscribe stream failed", err);
-							});
-						  });
-
-						  client.on('stream-subscribed', function (evt) {
-							var stream = evt.stream;
-							console.log("Subscribe remote stream successfully: " + stream.getId());
-							if ($('div#video #agora_remote'+stream.getId()).length === 0) {
-							  $('div#video').append('<div id="agora_remote'+stream.getId()+'" style="float:left; width:810px;height:607px;display:inline-block;"></div>');
-							}
-							stream.play('agora_remote' + stream.getId());
-						  });
+                
+                // Initialize the client
+				rtc.client.init(option.appID, function () {
+				    console.log("init success");
+					// The value of role can be "host" or "audience".
+					rtc.client.setClientRole("audience");
+					
+					// Join a channel
+					rtc.client.join(option.token ? option.token : null, option.channel, option.uid ? +option.uid : null, function (uid) {
+					    console.log("join channel: " + option.channel + " success, uid: " + uid);
+						rtc.params.uid = uid;
 					}, function(err) {
-						console.log("Join channel failed", err);
+					    console.error("client join failed", err)
+					})
+					
+					rtc.client.on("stream-added", function (evt) {
+					    var stream = evt.stream;
+					    console.log("New stream added: " + stream.getId());
+					    console.log("Subscribe ", stream);
+					    rtc.client.subscribe(stream, function (err) {
+						    console.log("Subscribe stream failed", err);
+						});
 					});
-
-				}, function (err) {
-					console.log("AgoraRTC client init failed", err);
-				});
-		    };
-		</script>
+					
+					rtc.client.on("stream-subscribed", function (evt) {
+					    
+					    var remoteStream = evt.stream;
+						console.log("Subscribe remote stream successfully: " + remoteStream.getId());
+						//if ($('div#video #agora_remote'+remoteStream.getId()).length === 0) {
+						  $('div#video').append('<div id="agora_remote'+remoteStream.getId()+'" style="float:left; width:810px;height:607px;display:inline-block;"></div>');
+						//}
+						remoteStream.play('agora_remote' + remoteStream.getId());
+						/*
+						var remoteStream = evt.stream;
+						  var id = remoteStream.getId();
+						  // Add a view for the remote stream.
+						  addView(id);
+						  // Play the remote stream.
+						  remoteStream.play("remote_video_" + id);
+						  console.log('stream-subscribed remote-uid: ', id);
+						  */
+					});
+					
+				}, (err) => {
+				    console.error(err);
+				});				
+			
+			}	
+				
+					</script>
 {template "content","footer"}
