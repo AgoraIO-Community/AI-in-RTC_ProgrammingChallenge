@@ -1,0 +1,241 @@
+
+
+INFO    2019-09-23T11:27:26:792   9068; Agora Logger Started
+INFO    2019-09-23T11:27:26:792   9068; Agora SDK ver 1.0.1 build 232, built on Aug  2 2019 04:00:34
+INFO    2019-09-23T11:27:26:792   9068; Agora SDK git ver:9fe55e8b4 and branch:HEAD
+WARN    2019-09-23T11:27:26:796   9068; CacheManager: load cache from storage error, err=2 elapsed 4
+ERROR   2019-09-23T11:27:26:796   9068; CacheManager: load report cache from storage error, err=2 elapsed 0
+INFO    2019-09-23T11:27:26:796   9068; use event engine
+INFO    2019-09-23T11:27:26:796   9068; [rtm-API] rtm service initialize
+INFO    2019-09-23T11:27:26:796   9068; [rtm-API] rtm start service
+INFO    2019-09-23T11:27:26:804   9070; Agora Service Worker Thread started: 0x555b19c8a3c0
+INFO    2019-09-23T11:27:26:812   9070; network: 'NETWORK_UNKOWN' -> 'LAN' ipv4/v6 '192.******.2'/'' gw ''/'' subtype 0 level -1 ssid '****' bssid '' rssi 0 asu 0
+INFO    2019-09-23T11:27:26:820   9072; Agora Service Worker Thread started: 0x7fdd5c0013b0
+INFO    2019-09-23T11:27:26:820   9068; [rtm-API] rtm service login with user id: 1234
+INFO    2019-09-23T11:27:26:821   9072; [rtm-ctx][0] rtm login, init chat context
+INFO    2019-09-23T11:27:26:821   9070; [rs] updateServers 199.190.44.36:8000, priority 1
+INFO    2019-09-23T11:27:26:821   9070; [rs] updateServers 199.190.44.37:8000, priority 1
+INFO    2019-09-23T11:27:26:821   9070; [rlbs] selected: 52.80.192.229:9700
+INFO    2019-09-23T11:27:26:821   9070; [rlbs] request rs list from 52.80.192.229:9700 with fake ch report_lbs_1569209246821.......
+INFO    2019-09-23T11:27:26:823   9072; ***CHAT BEGIN: appid:'0c****************************0b' userId:'1234' sid:'36221763102396327030000000000000'
+INFO    2019-09-23T11:27:26:823   9072; [rtm-chat][3f] rtm emit login signal
+INFO    2019-09-23T11:27:26:827   9072; [rtm-chat][3f] connection state change, from 1 to: 2, reason: 1
+INFO    2019-09-23T11:27:26:827   9072; [rtm-note] connection state change: 2, reason: 1
+INFO    2019-09-23T11:27:26:827   9072; [rtm-ctrl][3f] max link count 2
+INFO    2019-09-23T11:27:26:827   9072; [rtm-chat][3f] setup connection lost timer
+INFO    2019-09-23T11:27:26:827   9072; [rtm-chat][3f] request link list, with user id: 1234, key: 0ccd38ee0fe749789a336f9901cf910b
+INFO    2019-09-23T11:27:26:827   9072; [ap] selected: 47.244.4.122:8000
+INFO    2019-09-23T11:27:26:827   9072; connecting to 47.244.4.122:8000 handle 5801be70, 21
+INFO    2019-09-23T11:27:26:827   9072; [ap] creating channel with 47.244.4.122:8000, ts 3290453, flag: 128
+INFO    2019-09-23T11:27:26:827   9072; [ap] selected: 47.74.211.17:8000
+INFO    2019-09-23T11:27:26:827   9072; [ap] creating channel with 47.74.211.17:8000, ts 3290453, flag: 128
+INFO    2019-09-23T11:27:26:827   9072; [ap] selected: 47.107.39.93:8000
+INFO    2019-09-23T11:27:26:827   9072; [ap] creating channel with 47.107.39.93:8000, ts 3290453, flag: 128
+INFO    2019-09-23T11:27:26:833   9072; [dns] parsed ip 118.190.148.38
+INFO    2019-09-23T11:27:26:833   9072; [dns] parsed ip 101.201.199.195
+INFO    2019-09-23T11:27:26:833   9072; [ap] onParsedDns with err 0, 118.190.148.38, 101.201.199.195, 
+INFO    2019-09-23T11:27:26:836   9070; [dns] parsed ip 101.201.199.195
+INFO    2019-09-23T11:27:26:836   9070; [dns] parsed ip 118.190.148.38
+INFO    2019-09-23T11:27:26:836   9070; [dns] parsed ip 42.81.57.169
+INFO    2019-09-23T11:27:26:836   9070; [dns] parsed ip 183.134.68.101
+INFO    2019-09-23T11:27:26:836   9070; [rs] dns parse result code: 0, servers size: 2
+INFO    2019-09-23T11:27:26:836   9070; [rs] updateServers 42.81.57.169:8000, priority 2
+INFO    2019-09-23T11:27:26:836   9070; [rs] updateServers 183.134.68.101:8000, priority 2
+INFO    2019-09-23T11:27:26:884   9070; [rlbs/u] responsed from 52.80.192.229:9700 with servers 117.34.213.37:8913
+INFO    2019-09-23T11:27:26:884   9070; [rs] updateServers 117.34.213.37:8913, priority 3
+INFO    2019-09-23T11:27:26:884   9070; [rs] updateServers 180.101.160.229:8913, priority 3
+INFO    2019-09-23T11:27:26:884   9070; [rs] updateServers 183.2.233.37:8913, priority 3
+INFO    2019-09-23T11:27:26:894   9072; [ap/t] tcp connected with 0x7fdd58003dc0
+INFO    2019-09-23T11:27:26:894   9072; [ap] tcp - creating channel with 47.244.4.122:8000, ts 3290453, flag: 128
+INFO    2019-09-23T11:27:26:909   9072; [ap/u] **responsed from 47.107.39.93:8000, (128).
+INFO    2019-09-23T11:27:26:909   9072; [rtm-ls][3f] update server list(size: 3)
+INFO    2019-09-23T11:27:26:909   9072; [rtm-ls][3f] add new server: env 0, all size: 0, avail size: 0, IP : 117.34.213.2:9131.
+INFO    2019-09-23T11:27:26:909   9072; [rtm-ls][3f] add new server: env 1, all size: 0, avail size: 0, IP : 117.34.213.2:9131.
+INFO    2019-09-23T11:27:26:909   9072; [rtm-ls][3f] add new server: env 0, all size: 1, avail size: 1, IP : 117.34.213.11:9130.
+INFO    2019-09-23T11:27:26:909   9072; [rtm-ls][3f] add new server: env 1, all size: 1, avail size: 1, IP : 117.34.213.11:9130.
+INFO    2019-09-23T11:27:26:909   9072; [rtm-ls][3f] add new server: env 0, all size: 2, avail size: 2, IP : 42.202.132.212:9130.
+INFO    2019-09-23T11:27:26:909   9072; [rtm-ls][3f] add new server: env 1, all size: 2, avail size: 2, IP : 42.202.132.212:9130.
+INFO    2019-09-23T11:27:26:909   9072; [rtm-ctrl][3f] link 0 is initialized
+INFO    2019-09-23T11:27:26:909   9072; [rtm-ctrl][3f] link 1 is initialized
+INFO    2019-09-23T11:27:26:909   9072; [rtm-ls][3f] env 0 selected: 42.202.132.212:9130, ticket: KAAAAAgAUMYDAFU1MgB8qa+MAQCJ1QUAnjuIXQAAAAAEADEyMzQAAAAAFABgoc192O2dxOWk3nzVIqskkII6vw==
+INFO    2019-09-23T11:27:26:909   9072; [rtm-ctrl][3f] link 0 login with server: 42.202.132.212:9130
+INFO    2019-09-23T11:27:26:909   9072; [rtm-link0][3f] login available times: 2 for server:42.202.132.212:9130
+INFO    2019-09-23T11:27:26:909   9072; connecting to 42.202.132.212:9130 handle 580201b0, 15
+INFO    2019-09-23T11:27:26:909   9072; [rtm-ls][3f] server: 42.202.132.212:9131 is in use, ignored
+INFO    2019-09-23T11:27:26:909   9072; [rtm-ls][3f] env 1 selected: 117.34.213.11:9131, ticket: KAAAAAgAUMYDAFU1MgB8qa+MAQAR1wUAnjuIXQAAAAAEADEyMzQAAAAAFAD4Kjm0QBHl22JL9qnZTlLwZAXsog==
+INFO    2019-09-23T11:27:26:909   9072; [rtm-ctrl][3f] link 1 login with server: 117.34.213.11:9131
+INFO    2019-09-23T11:27:26:909   9072; [rtm-link1][3f] login available times: 2 for server:117.34.213.11:9131
+INFO    2019-09-23T11:27:26:909   9072; connecting to 117.34.213.11:9131 handle 58021950, 17
+INFO    2019-09-23T11:27:26:909   9072; [rtm-ls][3f] update server list(size: 3)
+INFO    2019-09-23T11:27:26:909   9072; [rtm-ls][3f] existing server, no need to add, IP : 117.34.213.2:9131.
+INFO    2019-09-23T11:27:26:909   9072; [rtm-ls][3f] existing server, no need to add, IP : 117.34.213.2:9131.
+INFO    2019-09-23T11:27:26:909   9072; [rtm-ls][3f] existing server, no need to add, IP : 117.34.213.11:9130.
+INFO    2019-09-23T11:27:26:909   9072; [rtm-ls][3f] existing server, no need to add, IP : 117.34.213.11:9130.
+INFO    2019-09-23T11:27:26:909   9072; [rtm-ls][3f] existing server, no need to add, IP : 42.202.132.212:9130.
+INFO    2019-09-23T11:27:26:909   9072; [rtm-ls][3f] existing server, no need to add, IP : 42.202.132.212:9130.
+WARN    2019-09-23T11:27:26:909   9072; [rtm-ctrl][3f] init links, link count 2 reach limit, return
+WARN    2019-09-23T11:27:26:909   9072; [rtm-ctrl][3f] link 0, addr: 42.202.132.212:9130 has been used, and loggingIn, return
+WARN    2019-09-23T11:27:26:909   9072; [rtm-ctrl][3f] link 1, addr: 117.34.213.11:9131 has been used, and loggingIn, return
+INFO    2019-09-23T11:27:26:933   9072; [ap/u] **responsed from 47.244.4.122:8000, (128).
+INFO    2019-09-23T11:27:26:933   9072; [rtm-ls][3f] update server list(size: 3)
+INFO    2019-09-23T11:27:26:933   9072; [rtm-ls][3f] existing server, no need to add, IP : 117.34.213.11:9130.
+INFO    2019-09-23T11:27:26:933   9072; [rtm-ls][3f] existing server, no need to add, IP : 117.34.213.11:9130.
+INFO    2019-09-23T11:27:26:933   9072; [rtm-ls][3f] add new server: env 0, all size: 3, avail size: 2, IP : 183.134.68.104:9130.
+INFO    2019-09-23T11:27:26:933   9072; [rtm-ls][3f] add new server: env 1, all size: 3, avail size: 2, IP : 183.134.68.104:9130.
+INFO    2019-09-23T11:27:26:933   9072; [rtm-ls][3f] existing server, no need to add, IP : 42.202.132.212:9130.
+INFO    2019-09-23T11:27:26:933   9072; [rtm-ls][3f] existing server, no need to add, IP : 42.202.132.212:9130.
+WARN    2019-09-23T11:27:26:933   9072; [rtm-ctrl][3f] init links, link count 2 reach limit, return
+WARN    2019-09-23T11:27:26:933   9072; [rtm-ctrl][3f] link 0, addr: 42.202.132.212:9130 has been used, and loggingIn, return
+WARN    2019-09-23T11:27:26:933   9072; [rtm-ctrl][3f] link 1, addr: 117.34.213.11:9131 has been used, and loggingIn, return
+INFO    2019-09-23T11:27:26:933   9072; [rtm-ls][3f] update server list(size: 3)
+INFO    2019-09-23T11:27:26:933   9072; [rtm-ls][3f] existing server, no need to add, IP : 117.34.213.11:9130.
+INFO    2019-09-23T11:27:26:933   9072; [rtm-ls][3f] existing server, no need to add, IP : 117.34.213.11:9130.
+INFO    2019-09-23T11:27:26:933   9072; [rtm-ls][3f] existing server, no need to add, IP : 183.134.68.104:9130.
+INFO    2019-09-23T11:27:26:933   9072; [rtm-ls][3f] existing server, no need to add, IP : 183.134.68.104:9130.
+INFO    2019-09-23T11:27:26:933   9072; [rtm-ls][3f] existing server, no need to add, IP : 42.202.132.212:9130.
+INFO    2019-09-23T11:27:26:933   9072; [rtm-ls][3f] existing server, no need to add, IP : 42.202.132.212:9130.
+WARN    2019-09-23T11:27:26:933   9072; [rtm-ctrl][3f] init links, link count 2 reach limit, return
+WARN    2019-09-23T11:27:26:933   9072; [rtm-ctrl][3f] link 0, addr: 42.202.132.212:9130 has been used, and loggingIn, return
+WARN    2019-09-23T11:27:26:933   9072; [rtm-ctrl][3f] link 1, addr: 117.34.213.11:9131 has been used, and loggingIn, return
+INFO    2019-09-23T11:27:26:953   9072; [rtm-link0][3f] tcp connected with 0x7fdd5801ee20 : 42.202.132.212:9130
+INFO    2019-09-23T11:27:26:953   9072; [rtm-link0][3f] send login request(seq 1, elapse 133) to server 42.202.132.212:9130
+INFO    2019-09-23T11:27:26:957   9072; [rtm-link1][3f] tcp connected with 0x7fdd58020560 : 117.34.213.11:9131
+INFO    2019-09-23T11:27:26:957   9072; [rtm-link1][3f] send login request(seq 2, elapse 136) to server 117.34.213.11:9131
+INFO    2019-09-23T11:27:26:999   9072; [rtm-link0][3f] **login response (seq 1, code 0,  elapse 178) from 42.202.132.212:9130, and current dest server 42.202.132.212:9130
+INFO    2019-09-23T11:27:26:999   9072; no on-going request, no need to sync
+INFO    2019-09-23T11:27:26:999   9072; [rtm-chat][3f] login success
+INFO    2019-09-23T11:27:26:999   9072; [rtm-chat][3f] connection state change, from 2 to: 3, reason: 2
+INFO    2019-09-23T11:27:26:999   9072; [rtm-note] connection state change: 3, reason: 2
+INFO    2019-09-23T11:27:27:005   9072; [rtm-link1][3f] **login response (seq 2, code 0,  elapse 184) from 117.34.213.11:9131, and current dest server 117.34.213.11:9131
+INFO    2019-09-23T11:27:27:005   9072; no on-going request, no need to sync
+INFO    2019-09-23T11:27:27:017   9072; [ap/u] **responsed from 47.74.211.17:8000, (128).
+INFO    2019-09-23T11:27:27:017   9072; [rtm-ls][3f] update server list(size: 3)
+INFO    2019-09-23T11:27:27:017   9072; [rtm-ls][3f] existing server, no need to add, IP : 117.34.213.11:9130.
+INFO    2019-09-23T11:27:27:017   9072; [rtm-ls][3f] existing server, no need to add, IP : 117.34.213.11:9130.
+INFO    2019-09-23T11:27:27:017   9072; [rtm-ls][3f] existing server, no need to add, IP : 183.134.68.104:9130.
+INFO    2019-09-23T11:27:27:017   9072; [rtm-ls][3f] existing server, no need to add, IP : 183.134.68.104:9130.
+INFO    2019-09-23T11:27:27:017   9072; [rtm-ls][3f] existing server, no need to add, IP : 117.34.213.2:9130.
+INFO    2019-09-23T11:27:27:017   9072; [rtm-ls][3f] existing server, no need to add, IP : 117.34.213.2:9130.
+WARN    2019-09-23T11:27:27:017   9072; [rtm-ctrl][3f] init links, link count 2 reach limit, return
+WARN    2019-09-23T11:27:27:017   9072; [rtm-ctrl][3f] link 0, addr: 42.202.132.212:9130 has been used, and loggedIn, return
+WARN    2019-09-23T11:27:27:017   9072; [rtm-ctrl][3f] link 1, addr: 117.34.213.11:9131 has been used, and log
+
+INFO    2019-09-23T11:29:42:337   9153; Agora Logger Started
+INFO    2019-09-23T11:29:42:337   9153; Agora SDK ver 1.0.1 build 232, built on Aug  2 2019 04:00:34
+INFO    2019-09-23T11:29:42:337   9153; Agora SDK git ver:9fe55e8b4 and branch:HEAD
+WARN    2019-09-23T11:29:42:337   9153; CacheManager: load cache from storage error, err=2 elapsed 0
+ERROR   2019-09-23T11:29:42:337   9153; CacheManager: load report cache from storage error, err=2 elapsed 0
+INFO    2019-09-23T11:29:42:337   9153; use event engine
+INFO    2019-09-23T11:29:42:337   9153; [rtm-API] rtm service initialize
+INFO    2019-09-23T11:29:42:337   9153; [rtm-API] rtm start service
+INFO    2019-09-23T11:29:42:338   9155; Agora Service Worker Thread started: 0x55e04ed4f3c0
+INFO    2019-09-23T11:29:42:338   9155; network: 'NETWORK_UNKOWN' -> 'LAN' ipv4/v6 '192.******.2'/'' gw ''/'' subtype 0 level -1 ssid '****' bssid '' rssi 0 asu 0
+INFO    2019-09-23T11:29:42:338   9157; Agora Service Worker Thread started: 0x7f6db40013b0
+INFO    2019-09-23T11:29:42:339   9153; [rtm-API] rtm service login with user id: 1234
+INFO    2019-09-23T11:29:42:339   9157; [rtm-ctx][0] rtm login, init chat context
+INFO    2019-09-23T11:29:42:339   9155; [rs] updateServers 199.190.44.36:8000, priority 1
+INFO    2019-09-23T11:29:42:339   9155; [rs] updateServers 199.190.44.37:8000, priority 1
+INFO    2019-09-23T11:29:42:339   9157; ***CHAT BEGIN: appid:'0c****************************0b' userId:'1234' sid:'97997890798624110590000000000000'
+INFO    2019-09-23T11:29:42:339   9157; [rtm-chat][33] rtm emit login signal
+INFO    2019-09-23T11:29:42:339   9157; [rtm-chat][33] connection state change, from 1 to: 2, reason: 1
+INFO    2019-09-23T11:29:42:339   9157; [rtm-note] connection state change: 2, reason: 1
+INFO    2019-09-23T11:29:42:340   9157; [rtm-ctrl][33] max link count 2
+INFO    2019-09-23T11:29:42:340   9157; [rtm-chat][33] setup connection lost timer
+INFO    2019-09-23T11:29:42:340   9157; [rtm-chat][33] request link list, with user id: 1234, key: 0ccd38ee0fe749789a336f9901cf910b
+INFO    2019-09-23T11:29:42:340   9157; [ap] selected: 47.244.4.122:8000
+INFO    2019-09-23T11:29:42:340   9157; connecting to 47.244.4.122:8000 handle b001be50, 17
+INFO    2019-09-23T11:29:42:340   9157; [ap] creating channel with 47.244.4.122:8000, ts 3425965, flag: 128
+INFO    2019-09-23T11:29:42:340   9155; [rlbs] selected: 52.80.192.229:9700
+INFO    2019-09-23T11:29:42:340   9155; [rlbs] request rs list from 52.80.192.229:9700 with fake ch report_lbs_1569209382340.......
+INFO    2019-09-23T11:29:42:340   9157; [ap] selected: 47.74.211.17:8000
+INFO    2019-09-23T11:29:42:340   9157; [ap] creating channel with 47.74.211.17:8000, ts 3425965, flag: 128
+INFO    2019-09-23T11:29:42:340   9157; [ap] selected: 47.107.39.93:8000
+INFO    2019-09-23T11:29:42:340   9157; [ap] creating channel with 47.107.39.93:8000, ts 3425965, flag: 128
+INFO    2019-09-23T11:29:42:348   9157; [dns] parsed ip 101.201.199.195
+INFO    2019-09-23T11:29:42:348   9157; [ap] onParsedDns with err 0, 101.201.199.195, 
+INFO    2019-09-23T11:29:42:348   9155; [dns] parsed ip 118.190.148.38
+INFO    2019-09-23T11:29:42:353   9155; [dns] parsed ip 42.81.57.169
+INFO    2019-09-23T11:29:42:353   9155; [dns] parsed ip 183.134.68.101
+INFO    2019-09-23T11:29:42:353   9155; [rs] dns parse result code: 0, servers size: 2
+INFO    2019-09-23T11:29:42:353   9155; [rs] updateServers 42.81.57.169:8000, priority 2
+INFO    2019-09-23T11:29:42:353   9155; [rs] updateServers 183.134.68.101:8000, priority 2
+INFO    2019-09-23T11:29:42:407   9155; [rlbs/u] responsed from 52.80.192.229:9700 with servers 117.21.184.25:8913
+INFO    2019-09-23T11:29:42:407   9155; [rs] updateServers 117.21.184.25:8913, priority 3
+INFO    2019-09-23T11:29:42:407   9155; [rs] updateServers 150.138.153.21:8913, priority 3
+INFO    2019-09-23T11:29:42:407   9155; [rs] updateServers 27.148.208.185:8913, priority 3
+INFO    2019-09-23T11:29:42:411   9157; [ap/t] tcp connected with 0x7f6db0003dc0
+INFO    2019-09-23T11:29:42:411   9157; [ap] tcp - creating channel with 47.244.4.122:8000, ts 3425965, flag: 128
+INFO    2019-09-23T11:29:42:422   9157; [ap/u] **responsed from 47.107.39.93:8000, (128).
+INFO    2019-09-23T11:29:42:422   9157; [rtm-ls][33] update server list(size: 3)
+INFO    2019-09-23T11:29:42:422   9157; [rtm-ls][33] add new server: env 0, all size: 0, avail size: 0, IP : 117.34.213.2:9130.
+INFO    2019-09-23T11:29:42:422   9157; [rtm-ls][33] add new server: env 1, all size: 0, avail size: 0, IP : 117.34.213.2:9130.
+INFO    2019-09-23T11:29:42:422   9157; [rtm-ls][33] add new server: env 0, all size: 1, avail size: 1, IP : 61.147.236.154:9131.
+INFO    2019-09-23T11:29:42:422   9157; [rtm-ls][33] add new server: env 1, all size: 1, avail size: 1, IP : 61.147.236.154:9131.
+INFO    2019-09-23T11:29:42:422   9157; [rtm-ls][33] add new server: env 0, all size: 2, avail size: 2, IP : 42.202.132.212:9130.
+INFO    2019-09-23T11:29:42:422   9157; [rtm-ls][33] add new server: env 1, all size: 2, avail size: 2, IP : 42.202.132.212:9130.
+INFO    2019-09-23T11:29:42:422   9157; [rtm-ctrl][33] link 0 is initialized
+INFO    2019-09-23T11:29:42:422   9157; [rtm-ctrl][33] link 1 is initialized
+INFO    2019-09-23T11:29:42:422   9157; [rtm-ls][33] env 0 selected: 42.202.132.212:9130, ticket: KAAAAAgAUMYDAK1GNAB8qa+MAQCJ1QUAJjyIXQAAAAAEADEyMzQAAAAAFABi7jz6IlP/QHReKSHUglKsyErXnw==
+INFO    2019-09-23T11:29:42:422   9157; [rtm-ctrl][33] link 0 login with server: 42.202.132.212:9130
+INFO    2019-09-23T11:29:42:422   9157; [rtm-link0][33] login available times: 2 for server:42.202.132.212:9130
+INFO    2019-09-23T11:29:42:422   9157; connecting to 42.202.132.212:9130 handle b0020100, 15
+INFO    2019-09-23T11:29:42:422   9157; [rtm-ls][33] server: 42.202.132.212:9131 is in use, ignored
+INFO    2019-09-23T11:29:42:422   9157; [rtm-ls][33] env 1 selected: 61.147.236.154:9131, ticket: KAAAAAgAUMYDAK1GNAB8qa+MAQCg1gUAJjyIXQAAAAAEADEyMzQAAAAAFAAC6eUZPi/wJKoSn2ma5ngPGmH1Ew==
+INFO    2019-09-23T11:29:42:422   9157; [rtm-ctrl][33] link 1 login with server: 61.147.236.154:9131
+INFO    2019-09-23T11:29:42:422   9157; [rtm-link1][33] login available times: 2 for server:61.147.236.154:9131
+INFO    2019-09-23T11:29:42:422   9157; connecting to 61.147.236.154:9131 handle b00218c0, 18
+INFO    2019-09-23T11:29:42:422   9157; [rtm-ls][33] update server list(size: 3)
+INFO    2019-09-23T11:29:42:422   9157; [rtm-ls][33] existing server, no need to add, IP : 117.34.213.2:9130.
+INFO    2019-09-23T11:29:42:422   9157; [rtm-ls][33] existing server, no need to add, IP : 117.34.213.2:9130.
+INFO    2019-09-23T11:29:42:422   9157; [rtm-ls][33] existing server, no need to add, IP : 61.147.236.154:9131.
+INFO    2019-09-23T11:29:42:422   9157; [rtm-ls][33] existing server, no need to add, IP : 61.147.236.154:9131.
+INFO    2019-09-23T11:29:42:422   9157; [rtm-ls][33] existing server, no need to add, IP : 42.202.132.212:9130.
+INFO    2019-09-23T11:29:42:422   9157; [rtm-ls][33] existing server, no need to add, IP : 42.202.132.212:9130.
+WARN    2019-09-23T11:29:42:422   9157; [rtm-ctrl][33] init links, link count 2 reach limit, return
+WARN    2019-09-23T11:29:42:422   9157; [rtm-ctrl][33] link 0, addr: 42.202.132.212:9130 has been used, and loggingIn, return
+WARN    2019-09-23T11:29:42:422   9157; [rtm-ctrl][33] link 1, addr: 61.147.236.154:9131 has been used, and loggingIn, return
+INFO    2019-09-23T11:29:42:445   9157; [ap/u] **responsed from 47.244.4.122:8000, (128).
+INFO    2019-09-23T11:29:42:445   9157; [rtm-ls][33] update server list(size: 3)
+INFO    2019-09-23T11:29:42:445   9157; [rtm-ls][33] existing server, no need to add, IP : 42.202.132.212:9130.
+INFO    2019-09-23T11:29:42:445   9157; [rtm-ls][33] existing server, no need to add, IP : 42.202.132.212:9130.
+INFO    2019-09-23T11:29:42:445   9157; [rtm-ls][33] existing server, no need to add, IP : 61.147.236.154:9131.
+INFO    2019-09-23T11:29:42:445   9157; [rtm-ls][33] existing server, no need to add, IP : 61.147.236.154:9131.
+INFO    2019-09-23T11:29:42:445   9157; [rtm-ls][33] add new server: env 0, all size: 3, avail size: 2, IP : 117.34.213.11:9131.
+INFO    2019-09-23T11:29:42:445   9157; [rtm-ls][33] add new server: env 1, all size: 3, avail size: 2, IP : 117.34.213.11:9131.
+WARN    2019-09-23T11:29:42:445   9157; [rtm-ctrl][33] init links, link count 2 reach limit, return
+WARN    2019-09-23T11:29:42:445   9157; [rtm-ctrl][33] link 0, addr: 42.202.132.212:9130 has been used, and loggingIn, return
+WARN    2019-09-23T11:29:42:445   9157; [rtm-ctrl][33] link 1, addr: 61.147.236.154:9131 has been used, and loggingIn, return
+INFO    2019-09-23T11:29:42:446   9157; [rtm-ls][33] update server list(size: 3)
+INFO    2019-09-23T11:29:42:446   9157; [rtm-ls][33] existing server, no need to add, IP : 42.202.132.212:9130.
+INFO    2019-09-23T11:29:42:446   9157; [rtm-ls][33] existing server, no need to add, IP : 42.202.132.212:9130.
+INFO    2019-09-23T11:29:42:446   9157; [rtm-ls][33] existing server, no need to add, IP : 61.147.236.154:9131.
+INFO    2019-09-23T11:29:42:446   9157; [rtm-ls][33] existing server, no need to add, IP : 61.147.236.154:9131.
+INFO    2019-09-23T11:29:42:446   9157; [rtm-ls][33] existing server, no need to add, IP : 117.34.213.11:9131.
+INFO    2019-09-23T11:29:42:446   9157; [rtm-ls][33] existing server, no need to add, IP : 117.34.213.11:9131.
+WARN    2019-09-23T11:29:42:446   9157; [rtm-ctrl][33] init links, link count 2 reach limit, return
+WARN    2019-09-23T11:29:42:446   9157; [rtm-ctrl][33] link 0, addr: 42.202.132.212:9130 has been used, and loggingIn, return
+WARN    2019-09-23T11:29:42:446   9157; [rtm-ctrl][33] link 1, addr: 61.147.236.154:9131 has been used, and loggingIn, return
+INFO    2019-09-23T11:29:42:468   9157; [rtm-link0][33] tcp connected with 0x7f6db001ed70 : 42.202.132.212:9130
+INFO    2019-09-23T11:29:42:468   9157; [rtm-link0][33] send login request(seq 1, elapse 130) to server 42.202.132.212:9130
+INFO    2019-09-23T11:29:42:468   9157; [rtm-link1][33] tcp connected with 0x7f6db00204f0 : 61.147.236.154:9131
+INFO    2019-09-23T11:29:42:469   9157; [rtm-link1][33] send login request(seq 2, elapse 130) to server 61.147.236.154:9131
+INFO    2019-09-23T11:29:42:515   9157; [rtm-link1][33] **login response (seq 2, code 0,  elapse 177) from 61.147.236.154:9131, and current dest server 61.147.236.154:9131
+INFO    2019-09-23T11:29:42:515   9157; no on-going request, no need to sync
+INFO    2019-09-23T11:29:42:515   9157; [rtm-chat][33] login success
+INFO    2019-09-23T11:29:42:515   9157; [rtm-chat][33] connection state change, from 2 to: 3, reason: 2
+INFO    2019-09-23T11:29:42:515   9157; [rtm-note] connection state change: 3, reason: 2
+INFO    2019-09-23T11:29:42:516   9157; [rtm-link0][33] **login response (seq 1, code 0,  elapse 177) from 42.202.132.212:9130, and current dest server 42.202.132.212:9130
+INFO    2019-09-23T11:29:42:516   9157; no on-going request, no need to sync
+INFO    2019-09-23T11:29:42:519   9157; [ap/u] **responsed from 47.74.211.17:8000, (128).
+INFO    2019-09-23T11:29:42:520   9157; [rtm-ls][33] update server list(size: 3)
+INFO    2019-09-23T11:29:42:520   9157; [rtm-ls][33] existing server, no need to add, IP : 117.34.213.2:9130.
+INFO    2019-09-23T11:29:42:520   9157; [rtm-ls][33] existing server, no need to add, IP : 117.34.213.2:9130.
+INFO    2019-09-23T11:29:42:520   9157; [rtm-ls][33] add new server: env 0, all size: 4, avail size: 3, IP : 183.134.68.104:9130.
+INFO    2019-09-23T11:29:42:520   9157; [rtm-ls][33] add new server: env 1, all size: 4, avail size: 3, IP : 183.134.68.104:9130.
+INFO    2019-09-23T11:29:42:520   9157; [rtm-ls][33] existing server, no need to add, IP : 42.202.132.212:9130.
+INFO    2019-09-23T11:29:42:520   9157; [rtm-ls][33] existing server, no need to add, IP : 42.202.132.212:9130.
+WARN    2019-09-23T11:29:42:520   9157; [rtm-ctrl][33] init links, link count 2 reach limit, return
+WARN    2019-09-23T11:29:42:520   9157; [rtm-ctrl][33] link 0, addr: 42.202.132.212:9130 has been used, and loggedIn, return
+WARN    2019-09-23T11:29:42:520   9157; [rtm-ctrl][33] link 1, addr: 61.147.236.154:9131 has been used, and loggedIn, return
+INFO    2019-09-23T11:29:42:520   9157; [rtm-ls][33] update server list(size: 3)
+INFO    2

@@ -1,0 +1,279 @@
+
+
+INFO    2019-10-08T11:29:19:492   3864; Agora Logger Started
+INFO    2019-10-08T11:29:19:492   3864; Agora SDK ver 1.0.1 build 232, built on Aug  2 2019 04:00:34
+INFO    2019-10-08T11:29:19:492   3864; Agora SDK git ver:9fe55e8b4 and branch:HEAD
+WARN    2019-10-08T11:29:19:492   3864; CacheManager: load cache from storage error, err=2 elapsed 0
+ERROR   2019-10-08T11:29:19:492   3864; CacheManager: load report cache from storage error, err=2 elapsed 0
+INFO    2019-10-08T11:29:19:492   3864; use event engine
+INFO    2019-10-08T11:29:19:492   3864; [rtm-API] rtm service initialize
+INFO    2019-10-08T11:29:19:492   3864; [rtm-API] rtm start service
+INFO    2019-10-08T11:29:19:494   3868; Agora Service Worker Thread started: 0x55d9a8348600
+INFO    2019-10-08T11:29:19:494   3868; network: 'NETWORK_UNKOWN' -> 'LAN' ipv4/v6 '192.******.5'/'' gw ''/'' subtype 0 level -1 ssid '****' bssid '' rssi 0 asu 0
+INFO    2019-10-08T11:29:19:495   3864; [rtm-API] rtm service login with user id: 1234
+INFO    2019-10-08T11:29:19:497   3870; Agora Service Worker Thread started: 0x7fc30c0013d0
+INFO    2019-10-08T11:29:19:497   3870; [rtm-ctx][0] rtm login, init chat context
+INFO    2019-10-08T11:29:19:497   3870; ***CHAT BEGIN: appid:'0c****************************0b' userId:'1234' sid:'77840698710371426490000000000000'
+INFO    2019-10-08T11:29:19:497   3870; [rtm-chat][79] rtm emit login signal
+INFO    2019-10-08T11:29:19:498   3870; [rtm-chat][79] connection state change, from 1 to: 2, reason: 1
+INFO    2019-10-08T11:29:19:498   3870; [rtm-note] connection state change: 2, reason: 1
+INFO    2019-10-08T11:29:19:498   3870; [rtm-ctrl][79] max link count 2
+INFO    2019-10-08T11:29:19:498   3870; [rtm-chat][79] setup connection lost timer
+INFO    2019-10-08T11:29:19:498   3870; [rtm-chat][79] request link list, with user id: 1234, key: 0ccd38ee0fe749789a336f9901cf910b
+INFO    2019-10-08T11:29:19:498   3870; [ap] selected: 47.244.4.122:8000
+INFO    2019-10-08T11:29:19:498   3870; connecting to 47.244.4.122:8000 handle fc01bf90, 17
+INFO    2019-10-08T11:29:19:498   3870; [ap] creating channel with 47.244.4.122:8000, ts 1174054, flag: 128
+INFO    2019-10-08T11:29:19:498   3870; [ap] selected: 47.74.211.17:8000
+INFO    2019-10-08T11:29:19:498   3870; [ap] creating channel with 47.74.211.17:8000, ts 1174054, flag: 128
+INFO    2019-10-08T11:29:19:498   3870; [ap] selected: 47.107.39.93:8000
+INFO    2019-10-08T11:29:19:498   3870; [ap] creating channel with 47.107.39.93:8000, ts 1174054, flag: 128
+INFO    2019-10-08T11:29:19:498   3868; [rs] updateServers 199.190.44.36:8000, priority 1
+INFO    2019-10-08T11:29:19:498   3868; [rs] updateServers 199.190.44.37:8000, priority 1
+INFO    2019-10-08T11:29:19:498   3868; [rlbs] selected: 52.80.192.229:9700
+INFO    2019-10-08T11:29:19:498   3868; [rlbs] request rs list from 52.80.192.229:9700 with fake ch report_lbs_1570505359498.......
+INFO    2019-10-08T11:29:19:509   3870; [dns] parsed ip 118.190.148.38
+INFO    2019-10-08T11:29:19:509   3870; [dns] parsed ip 101.201.199.195
+INFO    2019-10-08T11:29:19:509   3870; [ap] onParsedDns with err 0, 118.190.148.38, 101.201.199.195, 
+INFO    2019-10-08T11:29:19:512   3868; [dns] parsed ip 118.190.148.38
+INFO    2019-10-08T11:29:19:512   3868; [dns] parsed ip 101.201.199.195
+INFO    2019-10-08T11:29:19:514   3868; [dns] parsed ip 183.134.68.101
+INFO    2019-10-08T11:29:19:514   3868; [dns] parsed ip 42.81.57.169
+INFO    2019-10-08T11:29:19:514   3868; [rs] dns parse result code: 0, servers size: 2
+INFO    2019-10-08T11:29:19:514   3868; [rs] updateServers 183.134.68.101:8000, priority 2
+INFO    2019-10-08T11:29:19:514   3868; [rs] updateServers 42.81.57.169:8000, priority 2
+INFO    2019-10-08T11:29:19:553   3868; [rlbs/u] responsed from 52.80.192.229:9700 with servers 117.21.184.25:8913
+INFO    2019-10-08T11:29:19:553   3868; [rs] updateServers 117.21.184.25:8913, priority 3
+INFO    2019-10-08T11:29:19:553   3868; [rs] updateServers 183.134.68.100:8913, priority 3
+INFO    2019-10-08T11:29:19:553   3868; [rs] updateServers 150.138.141.231:8913, priority 3
+INFO    2019-10-08T11:29:19:570   3870; [ap/t] tcp connected with 0x7fc2fc003de0
+INFO    2019-10-08T11:29:19:570   3870; [ap] tcp - creating channel with 47.244.4.122:8000, ts 1174054, flag: 128
+INFO    2019-10-08T11:29:19:590   3870; [ap/u] **responsed from 47.107.39.93:8000, (128).
+INFO    2019-10-08T11:29:19:590   3870; [rtm-ls][79] update server list(size: 3)
+INFO    2019-10-08T11:29:19:590   3870; [rtm-ls][79] add new server: env 0, all size: 0, avail size: 0, IP : 117.34.213.11:9130.
+INFO    2019-10-08T11:29:19:590   3870; [rtm-ls][79] add new server: env 1, all size: 0, avail size: 0, IP : 117.34.213.11:9130.
+INFO    2019-10-08T11:29:19:590   3870; [rtm-ls][79] add new server: env 0, all size: 1, avail size: 1, IP : 61.147.236.153:9130.
+INFO    2019-10-08T11:29:19:590   3870; [rtm-ls][79] add new server: env 1, all size: 1, avail size: 1, IP : 61.147.236.153:9130.
+INFO    2019-10-08T11:29:19:590   3870; [rtm-ls][79] add new server: env 0, all size: 2, avail size: 2, IP : 183.134.68.104:9130.
+INFO    2019-10-08T11:29:19:590   3870; [rtm-ls][79] add new server: env 1, all size: 2, avail size: 2, IP : 183.134.68.104:9130.
+INFO    2019-10-08T11:29:19:591   3870; [rtm-ctrl][79] link 0 is initialized
+INFO    2019-10-08T11:29:19:591   3870; [rtm-ctrl][79] link 1 is initialized
+INFO    2019-10-08T11:29:19:591   3870; [rtm-ls][79] env 0 selected: 183.134.68.104:9130, ticket: KAAAAAgAUMYDACbqEQB8qa+MAQDKUAcAjwKcXQAAAAAEADEyMzQAAAAAFADznwYlDvjiF8aFqVKU8GaLm6s2pg==
+INFO    2019-10-08T11:29:19:591   3870; [rtm-ctrl][79] link 0 login with server: 183.134.68.104:9130
+INFO    2019-10-08T11:29:19:591   3870; [rtm-link0][79] login available times: 2 for server:183.134.68.104:9130
+INFO    2019-10-08T11:29:19:591   3870; connecting to 183.134.68.104:9130 handle fc0201d0, 15
+INFO    2019-10-08T11:29:19:591   3870; [rtm-ls][79] server: 183.134.68.104:9131 is in use, ignored
+INFO    2019-10-08T11:29:19:591   3870; [rtm-ls][79] env 1 selected: 61.147.236.153:9131, ticket: KAAAAAgAUMYDACbqEQB8qa+MAQDuUwcAjwKcXQAAAAAEADEyMzQAAAAAFAB1rSmhqAvBLNCrdD2ZFQZ6LnBopw==
+INFO    2019-10-08T11:29:19:591   3870; [rtm-ctrl][79] link 1 login with server: 61.147.236.153:9131
+INFO    2019-10-08T11:29:19:591   3870; [rtm-link1][79] login available times: 2 for server:61.147.236.153:9131
+INFO    2019-10-08T11:29:19:591   3870; connecting to 61.147.236.153:9131 handle fc021970, 19
+INFO    2019-10-08T11:29:19:591   3870; [rtm-ls][79] update server list(size: 3)
+INFO    2019-10-08T11:29:19:591   3870; [rtm-ls][79] existing server, no need to add, IP : 117.34.213.11:9130.
+INFO    2019-10-08T11:29:19:591   3870; [rtm-ls][79] existing server, no need to add, IP : 117.34.213.11:9130.
+INFO    2019-10-08T11:29:19:591   3870; [rtm-ls][79] existing server, no need to add, IP : 61.147.236.153:9130.
+INFO    2019-10-08T11:29:19:591   3870; [rtm-ls][79] existing server, no need to add, IP : 61.147.236.153:9130.
+INFO    2019-10-08T11:29:19:591   3870; [rtm-ls][79] existing server, no need to add, IP : 183.134.68.104:9130.
+INFO    2019-10-08T11:29:19:591   3870; [rtm-ls][79] existing server, no need to add, IP : 183.134.68.104:9130.
+WARN    2019-10-08T11:29:19:591   3870; [rtm-ctrl][79] init links, link count 2 reach limit, return
+WARN    2019-10-08T11:29:19:591   3870; [rtm-ctrl][79] link 0, addr: 183.134.68.104:9130 has been used, and loggingIn, return
+WARN    2019-10-08T11:29:19:591   3870; [rtm-ctrl][79] link 1, addr: 61.147.236.153:9131 has been used, and loggingIn, return
+INFO    2019-10-08T11:29:19:591   3870; [ap/u] **responsed from 47.107.39.93:8000, (128).
+INFO    2019-10-08T11:29:19:591   3870; [rtm-ls][79] update server list(size: 3)
+INFO    2019-10-08T11:29:19:591   3870; [rtm-ls][79] existing server, no need to add, IP : 117.34.213.11:9131.
+INFO    2019-10-08T11:29:19:591   3870; [rtm-ls][79] existing server, no need to add, IP : 117.34.213.11:9131.
+INFO    2019-10-08T11:29:19:591   3870; [rtm-ls][79] existing server, no need to add, IP : 61.147.236.153:9131.
+INFO    2019-10-08T11:29:19:591   3870; [rtm-ls][79] existing server, no need to add, IP : 61.147.236.153:9131.
+INFO    2019-10-08T11:29:19:591   3870; [rtm-ls][79] existing server, no need to add, IP : 183.134.68.104:9131.
+INFO    2019-10-08T11:29:19:591   3870; [rtm-ls][79] existing server, no need to add, IP : 183.134.68.104:9131.
+WARN    2019-10-08T11:29:19:591   3870; [rtm-ctrl][79] init links, link count 2 reach limit, return
+WARN    2019-10-08T11:29:19:591   3870; [rtm-ctrl][79] link 0, addr: 183.134.68.104:9130 has been used, and loggingIn, return
+WARN    2019-10-08T11:29:19:591   3870; [rtm-ctrl][79] link 1, addr: 61.147.236.153:9131 has been used, and loggingIn, return
+INFO    2019-10-08T11:29:19:591   3870; [rtm-ls][79] update server list(size: 3)
+INFO    2019-10-08T11:29:19:591   3870; [rtm-ls][79] existing server, no need to add, IP : 117.34.213.11:9131.
+INFO    2019-10-08T11:29:19:591   3870; [rtm-ls][79] existing server, no need to add, IP : 117.34.213.11:9131.
+INFO    2019-10-08T11:29:19:591   3870; [rtm-ls][79] existing server, no need to add, IP : 61.147.236.153:9131.
+INFO    2019-10-08T11:29:19:591   3870; [rtm-ls][79] existing server, no need to add, IP : 61.147.236.153:9131.
+INFO    2019-10-08T11:29:19:591   3870; [rtm-ls][79] existing server, no need to add, IP : 183.134.68.104:9131.
+INFO    2019-10-08T11:29:19:591   3870; [rtm-ls][79] existing server, no need to add, IP : 183.134.68.104:9131.
+WARN    2019-10-08T11:29:19:591   3870; [rtm-ctrl][79] init links, link count 2 reach limit, return
+WARN    2019-10-08T11:29:19:591   3870; [rtm-ctrl][79] link 0, addr: 183.134.68.104:9130 has been used, and loggingIn, return
+WARN    2019-10-08T11:29:19:591   3870; [rtm-ctrl][79] link 1, addr: 61.147.236.153:9131 has been used, and loggingIn, return
+INFO    2019-10-08T11:29:19:609   3870; [ap/u] **responsed from 47.244.4.122:8000, (128).
+INFO    2019-10-08T11:29:19:609   3870; [rtm-ls][79] update server list(size: 3)
+INFO    2019-10-08T11:29:19:609   3870; [rtm-ls][79] add new server: env 0, all size: 3, avail size: 2, IP : 117.34.213.2:9131.
+INFO    2019-10-08T11:29:19:609   3870; [rtm-ls][79] add new server: env 1, all size: 3, avail size: 2, IP : 117.34.213.2:9131.
+INFO    2019-10-08T11:29:19:609   3870; [rtm-ls][79] existing server, no need to add, IP : 183.134.68.104:9130.
+INFO    2019-10-08T11:29:19:609   3870; [rtm-ls][79] existing server, no need to add, IP : 183.134.68.104:9130.
+INFO    2019-10-08T11:29:19:609   3870; [rtm-ls][79] add new server: env 0, all size: 4, avail size: 3, IP : 42.202.132.212:9131.
+INFO    2019-10-08T11:29:19:609   3870; [rtm-ls][79] add new server: env 1, all size: 4, avail size: 3, IP : 42.202.132.212:9131.
+WARN    2019-10-08T11:29:19:609   3870; [rtm-ctrl][79] init links, link count 2 reach limit, return
+WARN    2019-10-08T11:29:19:609   3870; [rtm-ctrl][79] link 0, addr: 183.134.68.104:9130 has been used, and loggingIn, return
+WARN    2019-10-08T11:29:19:609   3870; [rtm-ctrl][79] link 1, addr: 61.147.236.153:9131 has been used, and loggingIn, return
+INFO    2019-10-08T11:29:19:609   3870; [rtm-ls][79] update server list(size: 3)
+INFO    2019-10-08T11:29:19:609   3870; [rtm-ls][79] existing server, no need to add, IP : 117.34.213.2:9131.
+INFO    2019-10-08T11:29:19:609   3870; [rtm-ls][79] existing server, no need to add, IP : 117.34.213.2:9131.
+INFO    2019-10-08T11:29:19:609   3870; [rtm-ls][79] existing server, no need to add, IP : 183.134.68.104:9130.
+INFO    2019-10-08T11:29:19:609   3870; [rtm-ls][79] existing server, no need to add, IP : 183.134.68.104:9130.
+INFO    2019-10-08T11:29:19:609   3870; [rtm-ls][79] existing server, no need to add, IP : 42.202.132.212:9131.
+INFO    2019-10-08T11:29:19:609   3870; [rtm-ls][79] existing server, no need to add, IP : 42.202.132.212:9131.
+WARN    2019-10-08T11:29:19:609   3870; [rtm-ctrl][79] init links, link count 2 reach limit, return
+WARN    2019-10-08T11:29:19:609   3870; [rtm-ctrl][79] link 0, addr: 183.134.68.104:9130 has been used, and loggingIn, return
+WARN    2019-10-08T11:29:19:609   3870; [rtm-ctrl][79] link 1, addr: 61.147.236.153:9131 has been used, and loggingIn, return
+INFO    2019-10-08T11:29:19:644   3870; [rtm-link1][79] tcp connected with 0x7fc2fc020580 : 61.147.236.153:9131
+INFO    2019-10-08T11:29:19:644   3870; [rtm-link1][79] send login request(seq 1, elapse 149) to server 61.147.236.153:9131
+INFO    2019-10-08T11:29:19:650   3870; [rtm-link0][79] tcp connected with 0x7fc2fc01ee60 : 183.134.68.104:9130
+INFO    2019-10-08T11:29:19:650   3870; [rtm-link0][79] send login request(seq 2, elapse 155) to server 183.134.68.104:9130
+INFO    2019-10-08T11:29:19:681   3870; [ap/u] **responsed from 47.74.211.17:8000, (128).
+INFO    2019-10-08T11:29:19:681   3870; [rtm-ls][79] update server list(size: 3)
+INFO    2019-10-08T11:29:19:681   3870; [rtm-ls][79] existing server, no need to add, IP : 61.147.236.153:9130.
+INFO    2019-10-08T11:29:19:681   3870; [rtm-ls][79] existing server, no need to add, IP : 61.147.236.153:9130.
+INFO    2019-10-08T11:29:19:681   3870; [rtm-ls][79] existing server, no need to add, IP : 117.34.213.2:9130.
+INFO    2019-10-08T11:29:19:681   3870; [rtm-ls][79] existing server, no need to add, IP : 117.34.213.2:9130.
+INFO    2019-10-08T11:29:19:681   3870; [rtm-ls][79] existing server, no need to add, IP : 117.34.213.11:9130.
+INFO    2019-10-08T11:29:19:681   3870; [rtm-ls][79] existing server, no need to add, IP : 117.34.213.11:9130.
+WARN    2019-10-08T11:29:19:681   3870; [rtm-ctrl][79] init links, link count 2 reach limit, return
+WARN    2019-10-08T11:29:19:681   3870; [rtm-ctrl][79] link 0, addr: 183.134.68.104:9130 has been used, and loggingIn, return
+WARN    2019-10-08T11:29:19:681   3870; [rtm-ctrl][79] link 1, addr: 61.147.236.153:9131 has been used, and loggingIn, return
+INFO    2019-10-08T11:29:19:681   3870; [rtm-ls][79] update server list(size: 3)
+INFO    2019-10-08T11:29:19:681   3870; [rtm-ls][79] existing server, no need to add, IP : 61.147.236.153:9130.
+INFO    2019-10-08T11:29:19:681   3870; [rtm-ls][79] existing server, no need to add, IP : 61.147.236.153:9130.
+INFO    2019-10-08T11:29:19:681   3870; [rtm-ls][79] existing server, no need to add, IP : 117.34.213.2:9130.
+INFO    2019-10-08T11:29:19:681   3870; [rtm-ls][79] existing server, no need to add, IP : 117.34.213.2:9130.
+INFO    2019-10-08T11:29:19:681   3870; [rtm-ls][79] existing server, no need to add, IP : 117.34.213.11:9130.
+INFO    2019-10-08T11:29:19:681   3870; [rtm-ls][79] existing server, no need to add, IP : 117.34.213.11:9130.
+WARN    2019-10-08T11:29:19:681   3870; [rtm-ctrl][79] init links, link count 2 reach limit, return
+WARN    2019-10-08T11:29:19:681   3870; [rtm-ctrl][79] link 0, addr: 183.134.68.104:9130 has been used, and loggingIn, return
+WARN    2019-10-08T11:29:19:681   3870; [rtm-ctrl][79] link 1, addr: 61.147.236.153:9131 has been used, and loggingIn, return
+INFO    2019-10-08T11:29:19:681   3870; [ap/u] **responsed from 47.74.211.17:8000, (128).
+INFO    2019-10-08T11:29:19:681   3870; [rtm-ls][79] update server list(size: 3)
+INFO    2019-10-08T11:29:19:681   3870; [rtm-ls][79] existing server, no need to add, IP : 61.147.236.153:9131.
+INFO    2019-10-08T11:29:19:681   3870; [rtm-ls][79] existing server, no need to add, IP : 61.147.236.153:9131.
+INFO    2019-10-08T11:29:19:681   3870; [rtm-ls][79] existing server, no need to add, IP : 117.34.213.2:9131.
+INFO    2019-10-08T11:29:19:681   3870; [rtm-ls][79] existing server, no need to add, IP : 117.34.213.2:9131.
+INFO    2019-10-08T11:29:19:681   3870; [rtm-ls][79] existing server, no need to add, IP : 117.34.213.11:9131.
+INFO    2019-10-08T11:29:19:681   3870; [rtm-ls][79] existing server, no need to add, IP : 117.34.213.11:9131.
+WARN    2019-10-08T11:29:19:681   3870; [rtm-ctrl][79] init links, link count 2 reach limit, return
+WARN    2019-10-08T11:29:19:681   3870; [rtm-ctrl][79] link 0, addr: 183.134.68.104:9130 has been used, and loggingIn, return
+WARN    2019-10-08T11:29:19:681   3870; [rtm-ctrl][79] link 1, addr: 61.147.236.153:9131 has been used, and loggingIn, return
+INFO    2019-10-08T11:29:19:681   3870; [rtm-ls][79] update server list(size: 3)
+INFO    2019-10-08T11:29:19:681   3870; [rtm-ls][79] existing server, no need to add, IP : 61.147.236.153:9131.
+INFO    2019-10-08T11:29:19:681   3870; [rtm-ls][79] existing server, no need to add, IP : 61.147.236.153:9131.
+INFO    2019-10-08T11:29:19:681   3870; [rtm-ls][79] existing server, no need to add, IP : 117.34.213.2:9131.
+INFO    2019-10-08T11:29:19:681   3870; [rtm-ls][79] existing server, no need to add, IP : 117.34.213.2:9131.
+INFO    2019-10-08T11:29:19:681   3870; [rtm-ls][79] existing server, no need to add, IP : 117.34.213.11:9131.
+INFO    2019-10-08T11:29:19:681   3870; [rtm-ls][79] existing server, no need to add, IP : 117.34.213.11:9131.
+WARN    2019-10-08T11:29:19:681   3870; [rtm-ctrl][79] init links, link count 2 reach limit, return
+WARN    2019-10-08T11:29:19:681   3870; [rtm-ctrl][79] link 0, addr: 183.134.68.104:9130 has been used, and loggingIn, return
+WARN    2019-10-08T11:29:19:681   3870; [rtm-ctrl][79] link 1, addr: 61.147.236.153:9131 has been used, and loggingIn, return
+INFO    2019-10-08T11:29:19:697   3870; [rtm-link1][79] **login response (seq 1, code 0,  elapse 202) from 61.147.236.153:9131, and current dest server 61.147.236.153:9131
+INFO    2019-10-08T11:29:19:697   3870; no on-going request, no need to sync
+INFO    2019-10-08T11:29:19:697   3870; [rtm-chat][79] login success
+INFO    2019-10-08T11:29:19:697   3870; [rtm-chat][79] connection state change, from 2 to: 3, reason: 2
+INFO    2019-10-08T11:29:19:697   3870; [rtm-note] connection state change: 3, reason: 2
+INFO    2019-10-08T11:29:19:708   3870; [rtm-link0][79] **login response (seq 2, code 0,  elapse 213) from 183.134.68.104:9130, and current dest server 183.134.68.104:9130
+INFO    2019-10-08T11:29:19:708   3870; no on-going request, no need to sync
+INFO    2019-10-08T11:29:19:734   3870; [rtm-msg][79] filter the rx message(17294857413417343783-11111120760929792100#1), rxTick 1174290
+INFO    2019-10-08T11:29:19:734   3870; [rtm-msg][79] filter the rx message(17294857413417343783-9991062804000871688#1), rxTick 1174290
+INFO    2019-10-08T11:29:19:734   3870; [rtm-msg][79] filter the rx message(17294857413417343783-9991062804000871688#2), rxTick 1174290
+INFO    2019-10-08T11:29:19:734   3870; [rtm-msg][79] filter the rx message(17294857413417343783-9991062804000871688#3), rxTick 1174290
+INFO    2019-10-08T11:29:19:734   3870; [rtm-msg][79] filter the rx message(17294857413417343783-9991062804000871688#4), rxTick 1174290
+INFO    2019-10-08T11:29:19:734   3870; [rtm-msg][79] filter the rx message(17294857413417343783-9991062804000871688#5), rxTick 1174290
+INFO    2019-10-08T11:29:19:734   3870; [rtm-msg][79] filter the rx message(17294857413417343783-9991062804000871688#6), rxTick 1174290
+INFO    2019-10-08T11:29:19:734   3870; [rtm-msg][79] filter the rx message(17294857413417343783-9991062804000871688#7), rxTick 1174290
+INFO    2019-10-08T11:29:19:734   3870; [rtm-msg][79] filter the rx message(17294857413417343783-9991062804000871688#8), rxTick 1174290
+INFO    2019-10-08T11:29:19:734   3870; [rtm-msg][79] filter the rx message(17294857413417343783-9991062804000871688#9), rxTick 1174290
+INFO    2019-10-08T11:29:19:734   3870; [rtm-msg][79] filter the rx message(17294857413417343783-9991062804000871688#10), rxTick 1174290
+INFO    2019-10-08T11:29:19:734   3870; [rtm-msg][79] filter the rx message(17294857413417343783-9991062804000871688#11), rxTick 1174290
+INFO    2019-10-08T11:29:19:734   3870; [rtm-msg][79] filter the rx message(17294857413417343783-9991062804000871688#12), rxTick 1174290
+INFO    2019-10-08T11:29:19:734   3870; [rtm-msg][79] filter the rx message(17294857413417343783-9991062804000871688#13), rxTick 1174290
+INFO    2019-10-08T11:29:19:734   3870; [rtm-msg][79] filter the rx message(17294857413417343783-9991062804000871688#14), rxTick 1174290
+INFO    2019-10-08T11:29:19:755   3870; [rtm-msg][79] filter the rx message(17294857413417343783-3844019039881691713#1), rxTick 1174311
+INFO    2019-10-08T11:29:19:765   3870; [rtm-msg][79] filter the rx message(17294857413417343783-3844019039881691713#2), rxTick 1174321
+INFO    2019-10-08T11:29:19:765   3870; [rtm-msg][79] filter the rx message(17294857413417343783-3844019039881691713#3), rxTick 1174321
+INFO    2019-10-08T11:29:19:765   3870; [rtm-msg][79] filter the rx message(17294857413417343783-3844019039881691713#4), rxTick 1174321
+INFO    2019-10-08T11:29:19:765   3870; [rtm-msg][79] filter the rx message(17294857413417343783-3844019039881691713#5), rxTick 1174321
+INFO    2019-10-08T11:29:19:765   3870; [rtm-msg][79] filter the rx message(17294857413417343783-3844019039881691713#6), rxTick 1174321
+INFO    2019-10-08T11:29:19:765   3870; [rtm-msg][79] filter the rx message(17294857413417343783-3844019039881691713#7), rxTick 1174321
+INFO    2019-10-08T11:29:19:765   3870; [rtm-msg][79] filter the rx message(17294857413417343783-3844019039881691713#8), rxTick 1174321
+INFO    2019-10-08T11:29:19:765   3870; [rtm-msg][79] filter the rx message(17294857413417343783-3844019039881691713#9), rxTick 1174321
+INFO    2019-10-08T11:29:19:765   3870; [rtm-msg][79] filter the rx message(17294857413417343783-3844019039881691713#10), rxTick 1174321
+INFO    2019-10-08T11:29:19:765   3870; [rtm-msg][79] filter the rx message(17294857413417343783-3844019039881691713#11), rxTick 1174321
+INFO    2019-10-08T11:29:19:765   3870; [rtm-msg][79] filter the rx message(17294857413417343783-3844019039881691713#12), rxTick 1174322
+INFO    2019-10-08T11:29:19:765   3870; [rtm-msg][79] filter the rx message(17294857413417343783-3844019039881691713#13), rxTick 1174322
+INFO    2019-10-08T11:29:19:766   3870; [rtm-msg][79] filter the rx message(17294857413417343783-3844019039881691713#14), rxTick 1174322
+INFO    2019-10-08T11:29:19:766   3870; [rtm-msg][79] filter the rx message(17294857413417343783-3844019039881691713#15), rxTick 1174322
+INFO    2019-10-08T11:29:21:266   3870; [rtm-note] receive message from author: 12345, type: 0, dst: 1234
+INFO    2019-10-08T11:29:21:266   3870; [rtm-note] receive message from author: 12345, type: 0, dst: 1234
+INFO    2019-10-08T11:29:21:266   3870; [rtm-note] receive message from author: 12345, type: 0, dst: 1234
+INFO    2019-10-08T11:29:21:266   3870; [rtm-note] receive message from author: 12345, type: 0, dst: 1234
+INFO    2019-10-08T11:29:21:266   3870; [rtm-note] receive message from author: 12345, type: 0, dst: 1234
+INFO    2019-10-08T11:29:21:266   3870; [rtm-note] receive message from author: 12345, type: 0, dst: 1234
+INFO    2019-10-08T11:29:21:266   3870; [rtm-note] receive message from author: 12345, type: 0, dst: 1234
+INFO    2019-10-08T11:29:21:266   3870; [rtm-note] receive message from author: 12345, type: 0, dst: 1234
+INFO    2019-10-08T11:29:21:266   3870; [rtm-note] receive message from author: 12345, type: 0, dst: 1234
+INFO    2019-10-08T11:29:21:266   3870; [rtm-note] receive message from author: 12345, type: 0, dst: 1234
+INFO    2019-10-08T11:29:21:266   3870; [rtm-note] receive message from author: 12345, type: 0, dst: 1234
+INFO    2019-10-08T11:29:21:266   3870; [rtm-note] receive message from author: 12345, type: 0, dst: 1234
+INFO    2019-10-08T11:29:21:266   3870; [rtm-note] receive message from author: 12345, type: 0, dst: 1234
+INFO    2019-10-08T11:29:21:266   3870; [rtm-note] receive message from author: 12345, type: 0, dst: 1234
+INFO    2019-10-08T11:29:21:266   3870; [rtm-note] receive message from author: 12345, type: 0, dst: 1234
+INFO    2019-10-08T11:29:21:266   3870; [rtm-note] receive message from author: 12345, type: 0, dst: 1234
+INFO    2019-10-08T11:29:21:266   3870; [rtm-note] receive message from author: 12345, type: 0, dst: 1234
+INFO    2019-10-08T11:29:21:266   3870; [rtm-note] receive message from author: 12345, type: 0, dst: 1234
+INFO    2019-10-08T11:29:21:266   3870; [rtm-note] receive message from author: 12345, type: 0, dst: 1234
+INFO    2019-10-08T11:29:21:266   3870; [rtm-note] receive message from author: 12345, type: 0, dst: 1234
+INFO    2019-10-08T11:29:21:266   3870; [rtm-note] receive message from author: 12345, type: 0, dst: 1234
+INFO    2019-10-08T11:29:21:266   3870; [rtm-note] receive message from author: 12345, type: 0, dst: 1234
+INFO    2019-10-08T11:29:21:266   3870; [rtm-note] receive message from author: 12345, type: 0, dst: 1234
+INFO    2019-10-08T11:29:21:266   3870; [rtm-note] receive message from author: 12345, type: 0, dst: 1234
+INFO    2019-10-08T11:29:21:266   3870; [rtm-note] receive message from author: 12345, type: 0, dst: 1234
+INFO    2019-10-08T11:29:21:266   3870; [rtm-note] receive message from author: 12345, type: 0, dst: 1234
+INFO    2019-10-08T11:29:21:266   3870; [rtm-note] receive message from author: 12345, type: 0, dst: 1234
+INFO    2019-10-08T11:29:21:266   3870; [rtm-note] receive message from author: 12345, type: 0, dst: 1234
+INFO    2019-10-08T11:29:21:266   3870; [rtm-note] receive message from author: 12345, type: 0, dst: 1234
+INFO    2019-10-08T11:29:21:266   3870; [rtm-note] receive message from author: 12345, type: 0, dst: 1234
+INFO    2019-10-08T11:29:24:502   3868; [rs] **report stats: seq: 24, report list size 0, tx/rx: 4339/1152, cache size: 0
+INFO    2019-10-08T11:29:24:502   3868; [rs] report server1: 117.21.184.25:8913
+INFO    2019-10-08T11:30:00:499   3868; [rs] **report stats: seq: 30, report list size 0, tx/rx: 5017/1440, cache size: 0
+INFO    2019-10-08T11:30:00:499   3868; [rs] report server1: 117.21.184.25:8913
+INFO    2019-10-08T11:30:36:501   3868; [rs] **report stats: seq: 36, report list size 0, tx/rx: 5695/1728, cache size: 0
+INFO    2019-10-08T11:30:36:501   3868; [rs] report server1: 117.21.184.25:8913
+INFO    2019-10-08T11:31:12:502   3868; [rs] **report stats: seq: 42, report list size 0, tx/rx: 6373/2016, cache size: 0
+INFO    2019-10-08T11:31:12:502   3868; [rs] report server1: 117.21.184.25:8913
+INFO    2019-10-08T11:31:48:502   3868; [rs] **report stats: seq: 48, report list size 0, tx/rx: 7051/2304, cache size: 0
+INFO    2019-10-08T11:31:48:502   3868; [rs] report server1: 117.21.184.25:8913
+INFO    2019-10-08T11:32:24:502   3868; [rs] **report stats: seq: 54, report list size 0, tx/rx: 7729/2592, cache size: 0
+INFO    2019-10-08T11:32:24:502   3868; [rs] report server1: 117.21.184.25:8913
+INFO    2019-10-08T11:33:00:500   3868; [rs] **report stats: seq: 60, report list size 0, tx/rx: 8407/2880, cache size: 0
+INFO    2019-10-08T11:33:00:500   3868; [rs] report server1: 117.21.184.25:8913
+INFO    2019-10-08T11:33:36:498   3868; [rs] **report stats: seq: 66, report list size 0, tx/rx: 9085/3168, cache size: 0
+INFO    2019-10-08T11:33:36:498   3868; [rs] report server1: 117.21.184.25:8913
+INFO    2019-10-08T11:34:06:500   3868; [rs] **report stats: seq: 71, report list size 0, tx/rx: 9650/3408, cache size: 0
+INFO    2019-10-08T11:34:06:500   3868; [rs] report server1: 117.21.184.25:8913
+INFO    2019-10-08T11:34:36:501   3868; [rs] **report stats: seq: 76, report list size 0, tx/rx: 10215/3648, cache size: 0
+INFO    2019-10-08T11:34:36:501   3868; [rs] report server1: 117.21.184.25:8913
+INFO    2019-10-08T11:35:12:501   3868; [rs] **report stats: seq: 82, report list size 0, tx/rx: 10893/3936, cache size: 0
+INFO    2019-10-08T11:35:12:501   3868; [rs] report server1: 117.21.184.25:8913
+INFO    2019-10-08T11:35:48:502   3868; [rs] **report stats: seq: 88, report list size 0, tx/rx: 11571/4224, cache size: 0
+INFO    2019-10-08T11:35:48:502   3868; [rs] report server1: 117.21.184.25:8913
+INFO    2019-10-08T11:36:24:502   3868; [rs] **report stats: seq: 94, report list size 0, tx/rx: 12249/4512, cache size: 0
+INFO    2019-10-08T11:36:24:502   3868; [rs] report server1: 117.21.184.25:8913
+INFO    2019-10-08T11:37:00:500   3868; [rs] **report stats: seq: 100, report list size 0, tx/rx: 12927/4800, cache size: 0
+INFO    2019-10-08T11:37:00:500   3868; [rs] report server1: 117.21.184.25:8913
+INFO    2019-10-08T11:37:36:498   3868; [rs] **report stats: seq: 106, report list size 0, tx/rx: 13605/5088, cache size: 0
+INFO    2019-10-08T11:37:36:498   3868; [rs] report server1: 117.21.184.25:8913
+INFO    2019-10-08T11:38:06:500   3868; [rs] **report stats: seq: 111, report list size 0, tx/rx: 14170/5328, cache size: 0
+INFO    2019-10-08T11:38:06:500   3868; [rs] report server1: 117.21.184.25:8913
+INFO    2019-10-08T11:38:36:501   3868; [rs] **report stats: seq: 116, report list size 0, tx/rx: 14735/5568, cache size: 0
+INFO    2019-10-08T11:38:36:501   3868; [rs] report server1: 117.21.184.25:8913
+INFO    2019-10-08T11:39:12:502   3868; [rs] **report stats: seq: 122, report list size 0, tx/rx: 15413/5856, cache size: 0
+INFO    2019-10-08T11:39:12:502   3868; [rs] report server1: 117.21.184.25:8913
+INFO    2019-10-08T11:39:48:502   3868; [rs] **report stats: seq: 128, report list size 0, tx/rx: 16091/6144, cache size: 0
+INFO    2019-10-08T11:39:48:502   3868; [rs] report server1: 117.21.184.25:8913
+INFO    2019-10-08T11:40:24:502   3868; [rs] **report stats: seq: 134, report list size 0, tx/rx: 16769/6432, cache size: 0
+INFO    2019-10-08T11:40:24:502   3868; [rs] report server1: 117.21.184.25:8913
+INFO    2019-10-08T11:41:00:499   3868; [rs] **report stats: seq: 140, report list size 0, tx/rx: 17447/6720, cache size: 0
+INFO    2019-10-08T11:41:00:499   3868; [rs] report server1: 117.21.184.25:8913
+INFO    2019-10-08T11:41:36:501   3868; [rs] **report stats: seq: 146, report list size 0, tx/rx: 18125/7008, cache size: 0
+INFO    2019-10-08T11:41:36:501   3868; [rs] report server1: 117.21.184.25:8913
+INFO    2019-10-08T11:42:12:501   3868; [rs] **report stats: seq: 152, report list size 0, tx/rx: 18803/7296, cache size: 0
+INFO    2019-10-08T11:42:12:501   3868; [rs] report server1: 117.21.184.25:8913

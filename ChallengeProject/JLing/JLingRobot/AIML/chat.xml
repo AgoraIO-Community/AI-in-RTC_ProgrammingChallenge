@@ -9,7 +9,7 @@
         <!-- 这里学习一个aiml文件 -->
 	<template>
 	<learn>chat.aiml</learn>
-	<learn>sturobot.aiml</learn>
+	<learn>zhoudk.aiml</learn>
 	<learn>corpus1000.aiml</learn>
 	<learn>learn.aiml</learn>
 	<learn>maimeng.aiml</learn>
