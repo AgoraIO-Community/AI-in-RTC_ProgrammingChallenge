@@ -1,0 +1,36 @@
+{
+  "name": "miniweb",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "keygrip": "^1.1.0",
+    "koa": "^2.7.0",
+    "koa-body": "^4.1.1",
+    "koa-bodyparser": "^4.2.1",
+    "koa-ejs": "^4.2.0",
+    "koa-generic-session": "^2.0.1",
+    "koa-router": "^7.4.0",
+    "koa-sqlite3-session": "^1.0.4",
+    "koa-static": "^5.0.0",
+    "node-uuid": "^1.4.8",
+    "sqlite3": "^4.0.9",
+    "ws": "^7.1.2",
+    "xml2js": "^0.4.19"
+  },
+  "server": {
+    "port": "3206",
+    "session": {
+      "key": "climbing.sid",
+      "expired": 1800
+    },
+    "token": {
+      "expired": 1800
+    },
+    "socket":{
+        "port":"3207"
+    }
+  }
+}
