@@ -1,0 +1,10 @@
+.canvas-component{
+    position: fixed;
+    top: -1000000px;
+    width: 100%;
+    height: 100%;
+}
+.canvas-component video{
+    width: 100%;
+    height: 100%;
+}
