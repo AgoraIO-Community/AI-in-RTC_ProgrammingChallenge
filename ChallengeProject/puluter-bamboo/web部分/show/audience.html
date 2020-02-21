@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>文字直播 | 辩之竹</title>
+  <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="jumbotron" style="margin-top:15px;">
+    <h1 class="display-4">文字直播 - 观众</h1>
+    <p class="lead">为了便于观众了解赛况，我们特意准备了文字直播</p>
+    <hr class="my-4">
+  </div>
+
+  <div class="container">
+    <ul class="list-group" id="list">
+    </ul>
+  </div>
+</div>
+</body>
+<script src="./agora-rtm-sdk-1.1.0.js"></script>
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/popper.js/1.15.0/esm/popper.min.js"></script>
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script>
+    let channel = null;
+
+
+    function getQueryString(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = location.search.substr(1).match(reg);
+        if (r != null) return unescape(decodeURI(r[2])); return "";
+    }
+    function showOnP(txt) {
+        $("#list").append('<li class="list-group-item">'+txt+'</li>');
+    }
+
+    $(document).ready(function () {
+        const client = AgoraRTM.createInstance('10b4d06f773d49c681b9d53519060b6a');
+        client.on('ConnectionStateChanged', (newState, reason) => {
+            console.log('on connection state changed to ' + newState + ' reason: ' + reason);
+        });
+        let uid0 = Math.floor(Math.random()*100000000).toString();
+        client.login({uid: uid0 }).then(() => {
+            console.log('AgoraRTM client login success');
+
+            let vaa = getQueryString("ch");
+            channel = client.createChannel(vaa===""?'mainStreamer1':vaa);
+            channel.join().then(() => {
+                /* 加入频道成功的处理逻辑 */
+                channel.on('ChannelMessage', ({ text }, senderId) => { // text 为收到的频道消息文本，senderId 为发送方的 User ID
+                    console.log(text);
+                    /* 收到频道消息的处理逻辑 */
+                    showOnP(new Date().getHours()+":"+new Date().getMinutes()+" || "+text);
+                });
+            }).catch(error => {
+                /* 加入频道失败的处理逻辑 */
+            });
+        }).catch(err => {
+            console.log('AgoraRTM client login failure', err);
+            console.log(uid0);
+        });
+
+    })
+
+</script>
+</html>
