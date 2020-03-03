@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+<title>大嘴蜗牛</title>
+<link rel="stylesheet" type="text/css" href="{WEB_PATH}statics/dzwn_v1/css/base.css">
+<link rel="stylesheet" type="text/css" href="{WEB_PATH}statics/dzwn_v1/css/homepage.css">
+<link rel="stylesheet" type="text/css" href="{WEB_PATH}statics/dzwn_v1/css/shutter.css">
+</head>
+
+<body>
+    <div class="mainBody">
+        <div class="menu_shell">
+            <div class="menu">
+                <div class="logo">
+                    <img src="{WEB_PATH}statics/dzwn_v1/img/dzwn_logo.jpg" alt="" class="logo_pic">
+                </div>
+                <div class="options">
+                    <div class="opiton1">
+                        发现				
+                    </div>
+                    <div class="opiton1">
+                        关注				
+                    </div>
+                </div>
+                <div class="options">
+                    <div class="search">
+                        <form action="{APP_PATH}index.php" method="get" target="_blank">
+                            <input type="hidden" name="m" value="search"/>
+                            <input type="hidden" name="c" value="index"/>
+                            <input type="hidden" name="a" value="init"/>
+                            <input type="hidden" name="typeid" value="{$typeid}" id="typeid"/>
+                            <input type="hidden" name="siteid" value="{$siteid}" id="siteid"/>
+                           <input placeholder="搜索" id="q" type="text"><input type="submit" value="搜 索" id="submit" />
+                        </form>	
+                    </div>
+                </div>
+                <!--
+                <div class="space">
+                </div>
+                -->
+				<!--
+                <div class="options">
+                    <div class="opiton2">
+                        <img src="{WEB_PATH}statics/dzwn_v1/img/notes.svg" class="notice">
+					</div>
+                    <div class="opiton2">
+                        <img src="{WEB_PATH}statics/dzwn_v1/img/messages.svg" class="notice">
+					</div>
+                    <div class="opiton3">
+                        <img src="{WEB_PATH}statics/dzwn_v1/img/head_picture.png" class="head_pic">				
+                    </div>
+                </div>
+                -->
+				<div class="regist_and_login">
+
+					<script type="text/javascript">
+						document.write('<iframe src="{APP_PATH}index.php?m=member&c=index&a=mini&forward='+encodeURIComponent(location.href)+'&siteid={get_siteid()}" allowTransparency="true"  width="300" height="30" frameborder="0" scrolling="no"></iframe>');
+					</script>
+                    
+				</div>
+				
+                
+            </div>
+        </div>
+        
+        
+        <div class="stomach_shell">
+			<div id="recommended_topics">
+
+				<div class="topic">
+					<a href="#">
+					#话题#
+					</a>
+				</div>
+				
+				<div class="topic">
+					<a href="#">
+					#话题#
+					</a>
+				</div>
+				
+				<div class="topic">
+					<a href="#">
+					#话题#
+					</a>
+				</div>
+				
+				<div class="topic">
+					<a href="#">
+					#话题#
+					</a>
+				</div>
+				
+				<div class="topic">
+					<a href="#">
+					#话题#
+					</a>
+				</div>
+				
+				<div class="topic">
+					<a href="#">
+					#话题#
+					</a>
+				</div>
+				
+				<div class="topic">
+					<a href="#">
+					#话题#
+					</a>
+				</div>
+				
+				<div class="topic">
+					<a href="#">
+					#话题#
+					</a>
+				</div>
+
+
+			</div>
+        
+			<div class="stomach">
+				<div class="left_stomach">
+					<div id="blinds">
+					{pc:content action="position" posid="1" catid="13" thumb="" order="id DESC"  num="4" }
+					
+						<div class="shutter">
+						
+							<div class="shutter-img">
+							{loop $data $n $r}
+								<a href="{$r['url']}" data-shutter-title="{$r['title']}"><img src="{$r['thumb']}" alt="{$r['title']}"></a>
+							{/loop}	
+							<!--
+								<a href="#" data-shutter-title="Super Man"><img src="{WEB_PATH}statics/dzwn_v1/img/images/shutter_2.jpg" alt="#"></a>
+								<a href="#" data-shutter-title="The Hulk"><img src="{WEB_PATH}statics/dzwn_v1/img/images/shutter_3.jpg" alt="#"></a>
+								<a href="#" data-shutter-title="The your"><img src="{WEB_PATH}statics/dzwn_v1/img/images/shutter_4.jpg" alt="#"></a>
+							-->
+							</div>
+							
+							<ul class="shutter-btn">
+								<li class="prev"></li>
+								<li class="next"></li>
+							</ul>
+							<!--
+							<div class="shutter-desc">
+								<p>Iron Man</p>
+							</div>
+							-->
+							
+						</div>
+					{/pc}
+						
+						<script src="{WEB_PATH}statics/dzwn_v1/js/jquery.min.js"></script>
+						<script src="{WEB_PATH}statics/dzwn_v1/js/velocity.js"></script>
+						<script src="{WEB_PATH}statics/dzwn_v1/js/shutter.js"></script>
+						
+						<script>
+						$(function () {
+							$('.shutter').shutter({
+								shutterW: 675, // 容器宽度
+								shutterH: 300, // 容器高度
+								isAutoPlay: true, // 是否自动播放
+								playInterval: 5000, // 自动播放时间
+								curDisplay: 3, // 当前显示页
+								fullPage: false // 是否全屏展示
+							});
+						});
+						</script>
+					</div>
+					<div class="article_list">
+						<a href="#">
+							<div class="article_synopsis">
+							    <div class="article_left">
+									<div class="article_title">
+										此处为文章标题
+									</div>
+									<div class="article_abstract">
+										此处为文章摘要,此处为文章摘要,此处为文章摘要,此处为文章摘要,此处为文章摘要,此处为文章摘要,此处为文章摘要,
+									</div>
+								</div>
+								<div class="article_right">
+									<div class="article_pic">
+										<img class="article_img" src="{WEB_PATH}statics/dzwn_v1/img/wzbf.jpg" />
+									</div>
+								</div>
+							</div>
+						</a>
+						
+						<a href="#">
+							<div class="article_synopsis">
+							    <div class="article_left">
+									<div class="article_title">
+										此处为文章标题
+									</div>
+									<div class="article_abstract">
+										此处为文章摘要,此处为文章摘要,此处为文章摘要,此处为文章摘要,此处为文章摘要,此处为文章摘要,此处为文章摘要,
+									</div>
+								</div>
+								<div class="article_right">
+									<div class="article_pic">
+										<img class="article_img" src="{WEB_PATH}statics/dzwn_v1/img/hmbb.jpg" />
+									</div>
+								</div>
+							</div>
+						</a>
+						
+						<a href="#">
+							<div class="article_synopsis">
+							    <div class="article_left">
+									<div class="article_title">
+										此处为文章标题
+									</div>
+									<div class="article_abstract">
+										此处为文章摘要,此处为文章摘要,此处为文章摘要,此处为文章摘要,此处为文章摘要,此处为文章摘要,此处为文章摘要,
+									</div>
+								</div>
+								<div class="article_right">
+									<div class="article_pic">
+										<img class="article_img" src="{WEB_PATH}statics/dzwn_v1/img/pkq.jpg"/>
+									</div>
+								</div>
+							</div>
+						</a>
+						
+						<a href="#">
+							<div class="article_synopsis">
+							    <div class="article_left">
+									<div class="article_title">
+										此处为文章标题
+									</div>
+									<div class="article_abstract">
+										此处为文章摘要,此处为文章摘要,此处为文章摘要,此处为文章摘要,此处为文章摘要,此处为文章摘要,此处为文章摘要,
+									</div>
+								</div>
+								<div class="article_right">
+									<div class="article_pic">
+										<img class="article_img" src="{WEB_PATH}statics/dzwn_v1/img/hlq.jpg" />
+									</div>
+								</div>
+							</div>
+						</a>
+						
+						<a href="#">
+							<div class="article_synopsis">
+							    <div class="article_left">
+									<div class="article_title">
+										此处为文章标题
+									</div>
+									<div class="article_abstract">
+										此处为文章摘要,此处为文章摘要,此处为文章摘要,此处为文章摘要,此处为文章摘要,此处为文章摘要,此处为文章摘要,
+									</div>
+								</div>
+								<div class="article_right">
+									<div class="article_pic">
+										<img class="article_img" src="{WEB_PATH}statics/dzwn_v1/img/wzbf.jpg" />
+									</div>
+								</div>
+							</div>
+						</a>
+						
+						<a href="#">
+							<div class="article_synopsis">
+							    <div class="article_left">
+									<div class="article_title">
+										此处为文章标题
+									</div>
+									<div class="article_abstract">
+										此处为文章摘要,此处为文章摘要,此处为文章摘要,此处为文章摘要,此处为文章摘要,此处为文章摘要,此处为文章摘要,
+									</div>
+								</div>
+								<div class="article_right">
+									<div class="article_pic">
+										<img class="article_img" src="{WEB_PATH}statics/dzwn_v1/img/hmbb.jpg" />
+									</div>
+								</div>
+							</div>
+						</a>
+						
+						<a href="#">
+							<div class="article_synopsis">
+							    <div class="article_left">
+									<div class="article_title">
+										此处为文章标题
+									</div>
+									<div class="article_abstract">
+										此处为文章摘要,此处为文章摘要,此处为文章摘要,此处为文章摘要,此处为文章摘要,此处为文章摘要,此处为文章摘要,
+									</div>
+								</div>
+								<div class="article_right">
+									<div class="article_pic">
+										<img class="article_img" src="{WEB_PATH}statics/dzwn_v1/img/pkq.jpg"/>
+									</div>
+								</div>
+							</div>
+						</a>
+						
+						<a href="#">
+							<div class="article_synopsis">
+							    <div class="article_left">
+									<div class="article_title">
+										此处为文章标题
+									</div>
+									<div class="article_abstract">
+										此处为文章摘要,此处为文章摘要,此处为文章摘要,此处为文章摘要,此处为文章摘要,此处为文章摘要,此处为文章摘要,
+									</div>
+								</div>
+								<div class="article_right">
+									<div class="article_pic">
+										<img class="article_img" src="{WEB_PATH}statics/dzwn_v1/img/hlq.jpg" />
+									</div>
+								</div>
+							</div>
+						</a>
+						
+					</div>
+				</div>
+				<div class="right_stomach">
+				    <div class="function_buttons">
+					    <div class="once_button">
+						    <button class="main_button">发  布</button>
+						</div>
+					</div>
+					<div class="ranks">
+						<div class="rank" id="attention">
+							<div class="rank_head" id="attention_head">
+							    最受关注
+							</div>
+							<div class="rank_body">
+							    <div class="li">
+								    <a href="#">1.ssafdfsafd</a>
+								</div>
+								<div class="li">
+								    <a href="#">2.ssafdfsafd</a>
+								</div>
+								<div class="li">
+								    <a href="#">3.ssafdfsafd</a>
+								</div>
+								<div class="li">
+								    <a href="#">4.ssafdfsafd</a>
+								</div>
+								<div class="li">
+								    <a href="#">5.ssafdfsafd</a>
+								</div>
+								<div class="li">
+								    <a href="#">6.ssafdfsafd</a>
+								</div>
+								<div class="li">
+								    <a href="#">7.ssafdfsafd</a>
+								</div>
+								<div class="li">
+								    <a href="#">8.ssafdfsafd</a>
+								</div>
+								<div class="li">
+								    <a href="#">9.ssafdfsafd</a>
+								</div>
+								<div class="li">
+								    <a href="#">10.ssafdfsafd</a>
+								</div>
+							</div>
+						</div>
+						<div class="rank" id="new">
+							<div class="rank_head" id="new_head">
+							    最新
+							</div>
+							<div class="rank_body">
+							    <div class="li">
+								    <a href="#">1.ssafdfsafd</a>
+								</div>
+								<div class="li">
+								    <a href="#">2.ssafdfsafd</a>
+								</div>
+								<div class="li">
+								    <a href="#">3.ssafdfsafd</a>
+								</div>
+								<div class="li">
+								    <a href="#">4.ssafdfsafd</a>
+								</div>
+								<div class="li">
+								    <a href="#">5.ssafdfsafd</a>
+								</div>
+								<div class="li">
+								    <a href="#">6.ssafdfsafd</a>
+								</div>
+								<div class="li">
+								    <a href="#">7.ssafdfsafd</a>
+								</div>
+								<div class="li">
+								    <a href="#">8.ssafdfsafd</a>
+								</div>
+								<div class="li">
+								    <a href="#">9.ssafdfsafd</a>
+								</div>
+								<div class="li">
+								    <a href="#">10.ssafdfsafd</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				    <div class="index_ad">
+					    <div id="advertisement">
+						    <img src="#" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="stomach_over">
+						已经到底了
+					</div>
+        </div>
+        
+	</div>
+
+</body>
+</html>

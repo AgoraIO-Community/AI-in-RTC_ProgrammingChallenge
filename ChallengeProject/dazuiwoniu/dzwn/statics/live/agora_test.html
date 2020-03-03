@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <title>agora_test</title>
+		<meta charset="utf-8" />
+		<script src="AgoraRTCSDK-2.8.0.js"></script>
+		<script src="vendor/jquery.js"></script>
+		<script>
+		    window.onload=function(){
+				//初始化几个变量
+				var camera, microphone;
+				var audioSelect = document.querySelector('select#audioSource');
+				var videoSelect = document.querySelector('select#videoSource');
+				/*
+				 *创建 Client 对象
+				 *用 AgoraRTC.createClient 方法创建 Client 对象，设置 mode 和 codec 。
+				*/
+				var client = AgoraRTC.createClient({mode: 'live', codec: "h264"});
+				
+				/*
+				 *初始化 Client 对象
+				 *创建 Client 对象后，将项目的 App ID 填入 client.init 方法，即可初始化 Client。
+				*/
+				var APPID = '8cdeee9db3d544659b9c6065a9cf8dcf';
+				client.init(APPID, function () {
+					console.log("AgoraRTC client initialized");
+					/*
+					 *加入频道
+					 *初始化 Client 对象完成后， 在成功的回调中调用 client.join 方法
+					*/
+					client.join('0068cdeee9db3d544659b9c6065a9cf8dcfIAAEfvPvJeGkZmXCsJ+wLUqIQaKTqlyJP8VZe/MMs+zHgxejJ7QAAAAAEAAFfGlhfUx/XQEAAQAtTX9d', '1000', null, function(uid) {
+						console.log("User " + uid + " join channel successfully");
+						/*
+						 *创建视音频流
+						 *streamID：音视频流 ID。设置为用户 ID （uid），可通过 client.join 的回调获取。
+						 *audio: 是否开启音频。
+						 *screen: 是否开启屏幕共享功能。请勿将 video 和 screen 同时设置为 true。
+						 */
+						camera = videoSource.value;
+						microphone = audioSource.value;
+						var localStream = AgoraRTC.createStream({
+							streamID: uid,
+							audio: true,
+							video: true,
+							cameraId: camera,
+							microphoneId: microphone,
+							screen: false}
+						);
+						/*
+						 *初始化音视频流
+						 */
+						localStream.init(function() {
+							console.log("getUserMedia successfully");
+							localStream.play('agora_local');
+							/*
+							 *发布本地音视频流
+							 *初始化完成后，在成功的回调中通过 client.publish 方法发布音视频流。
+							 */
+							client.publish(localStream, function (err) {
+								console.log("Publish local stream error: " + err);
+							});
+
+							client.on('stream-published', function (evt) {
+								console.log("Publish local stream successfully");
+							});
+
+						}, function (err) {
+							console.log("getUserMedia failed", err);
+						});
+					}, function(err) {
+						console.log("Join channel failed", err);
+					});
+
+				}, function (err) {
+					console.log("AgoraRTC client init failed", err);
+				});
+				
+				/*
+				 *获取设备的函数
+				 */
+				function getDevices() {
+				  AgoraRTC.getDevices(function (devices) {
+					for (var i = 0; i !== devices.length; ++i) {
+					  var device = devices[i];
+					  var option = document.createElement('option');
+					  option.value = device.deviceId;
+					  if (device.kind === 'audioinput') {
+						option.text = device.label || 'microphone ' + (audioSelect.length + 1);
+						audioSelect.appendChild(option);
+					  } else if (device.kind === 'videoinput') {
+						option.text = device.label || 'camera ' + (videoSelect.length + 1);
+						videoSelect.appendChild(option);
+					  } else {
+						console.log('Some other kind of source/device: ', device);
+					  }
+					}
+				  });
+				}
+				getDevices();
+		    };
+		</script>
+	</head>
+	<body>
+	    <div id="div_device" class="panel panel-default">
+			<div class="select">
+			    <label for="audioSource">Audio source: </label><select id="audioSource"></select>
+			</div>
+			<div class="select">
+			    <label for="videoSource">Video source: </label><select id="videoSource"></select>
+			</div>
+		</div>
+		<div id="video" style="margin:0 auto;">
+			<div id="agora_local" style="float:right;width:210px;height:147px;display:inline-block;"></div>
+		</div>
+	</body>
+</html>
