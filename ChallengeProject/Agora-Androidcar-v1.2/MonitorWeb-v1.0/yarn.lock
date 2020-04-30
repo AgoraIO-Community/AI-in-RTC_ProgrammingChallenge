@@ -65,6 +65,10 @@ agora-rtc-sdk@^2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/agora-rtc-sdk/-/agora-rtc-sdk-2.3.1.tgz#ba99637ee0d28b3b6453965876e7e35f8d76cfd8"
 
+agora-signaling-sdk@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/agora-signaling-sdk/-/agora-signaling-sdk-1.4.0.tgz#c7da6979ac287187d21aeab9217ab0586b555f6f"
+
 ajv-keywords@^2.1.0:
   version "2.1.1"
   resolved "http://registry.npm.taobao.org/ajv-keywords/download/ajv-keywords-2.1.1.tgz#617997fc5f60576894c435f940d819e135b80762"
@@ -934,13 +938,9 @@ boom@5.x.x:
   dependencies:
     hoek "4.x.x"
 
-bootstrap-material-design-icons@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/bootstrap-material-design-icons/-/bootstrap-material-design-icons-2.2.0.tgz#60e2f584367a73c960c511584d6fd5512dbe151e"
-
-bootstrap-material-design@4.1.1:
-  version "4.1.1"
-  resolved "http://registry.npm.taobao.org/bootstrap-material-design/download/bootstrap-material-design-4.1.1.tgz#87433db0bf64d6a0afb0f5faaa8606134c9d26d2"
+bootstrap@^4.1.3:
+  version "4.4.1"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.4.1.tgz#8582960eea0c5cd2bede84d8b0baf3789c3e8b01"
 
 brace-expansion@^1.1.7:
   version "1.1.11"
@@ -3765,9 +3765,9 @@ jest@^22.2.2:
     import-local "^1.0.0"
     jest-cli "^22.4.3"
 
-jquery@>=1.12.0, jquery@^3.3.1:
-  version "3.3.1"
-  resolved "http://registry.npm.taobao.org/jquery/download/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
+jquery@>=1.12.0, jquery@^3.5.0:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.5.0.tgz#9980b97d9e4194611c36530e7dc46a58d7340fc9"
 
 js-base64@^2.1.9:
   version "2.4.3"
