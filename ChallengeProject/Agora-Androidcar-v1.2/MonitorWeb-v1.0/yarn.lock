@@ -65,6 +65,10 @@ agora-rtc-sdk@^2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/agora-rtc-sdk/-/agora-rtc-sdk-2.3.1.tgz#ba99637ee0d28b3b6453965876e7e35f8d76cfd8"
 
+agora-signaling-sdk@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/agora-signaling-sdk/-/agora-signaling-sdk-1.4.0.tgz#c7da6979ac287187d21aeab9217ab0586b555f6f"
+
 ajv-keywords@^2.1.0:
   version "2.1.1"
   resolved "http://registry.npm.taobao.org/ajv-keywords/download/ajv-keywords-2.1.1.tgz#617997fc5f60576894c435f940d819e135b80762"
@@ -934,13 +938,9 @@ boom@5.x.x:
   dependencies:
     hoek "4.x.x"
 
-bootstrap-material-design-icons@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/bootstrap-material-design-icons/-/bootstrap-material-design-icons-2.2.0.tgz#60e2f584367a73c960c511584d6fd5512dbe151e"
-
-bootstrap-material-design@4.1.1:
-  version "4.1.1"
-  resolved "http://registry.npm.taobao.org/bootstrap-material-design/download/bootstrap-material-design-4.1.1.tgz#87433db0bf64d6a0afb0f5faaa8606134c9d26d2"
+bootstrap@^4.1.3:
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.6.0.tgz#97b9f29ac98f98dfa43bf7468262d84392552fd7"
 
 brace-expansion@^1.1.7:
   version "1.1.11"
@@ -2902,8 +2902,8 @@ home-or-tmp@^2.0.0:
     os-tmpdir "^1.0.1"
 
 hosted-git-info@^2.1.4:
-  version "2.6.0"
-  resolved "http://registry.npm.taobao.org/hosted-git-info/download/hosted-git-info-2.6.0.tgz#23235b29ab230c576aab0d4f13fc046b0b038222"
+  version "2.8.9"
+  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.8.9.tgz#dffc0bf9a21c02209090f2aa69429e1414daf3f9"
 
 howler@^2.0.12:
   version "2.0.12"
