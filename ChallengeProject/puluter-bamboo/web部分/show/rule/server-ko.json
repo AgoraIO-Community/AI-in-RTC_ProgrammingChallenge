@@ -1,0 +1,8 @@
+{
+  "statusNow": 0,
+  "desc1": "0~N 第N个环节 下标从0开始",
+  "order": 1,
+  "statusTo": 1,
+  "desc": "0-不变 1-进入环节statusTo 2-开始计时 3-停止计时"
+
+}

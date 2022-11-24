@@ -1,0 +1,95 @@
+
+.container {
+  margin-top:10PX;
+}
+
+.battle-all {
+  margin:0 24px;
+  border-radius: 12px;
+  background-color:#FFF;
+  height:90PX;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding:10PX;
+  .title-bar {
+    display: flex;
+    height: 10PX;
+    flex-direction: row;
+    justify-content: space-between;
+    .debateTheme {
+      height:10PX;
+      color:#6190E8;
+      font-size: 10PX;
+      line-height: 10PX;
+      margin-top:-5PX;
+    }
+    .bar-btn {
+      margin-top:-8PX;
+    }
+  }
+  .below {
+    display: flex;
+    flex-direction: row;
+    .left {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width:80%;
+      .team {
+        height: 35PX;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .teamC {
+          display: flex;
+          flex-direction: row;
+          .teamIcon {
+            height: 35PX;
+            width: 35PX;
+            border-radius:50%;
+          }
+          .teamName {
+            font-size: 20PX;
+            height: 35PX;
+            line-height:35PX;
+            margin-left: 15PX;
+          }
+        }
+        .point {
+          font-size:20PX;
+          height: 35PX;
+          line-height:35PX;
+        }
+      }
+    }
+    .time {
+      height:80PX;
+      line-height:20PX;
+      color:#929292;
+      font-size: 15PX;
+      margin-left: 15PX;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+}
+.team-win {
+  color: #474747;
+}
+.team-loss{
+  color : #a6a6a6;
+}
+.tag{
+  height: 35PX;
+  line-height:35PX;
+  margin-left: 5PX;
+}
+.dd {
+  color: #424143;
+}
+
+.invisible {
+  display:none;
+}

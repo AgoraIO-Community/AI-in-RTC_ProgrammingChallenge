@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "js-md5": "^0.7.3",
+    "mp-colorui": "^0.4.11"
+  }
+}

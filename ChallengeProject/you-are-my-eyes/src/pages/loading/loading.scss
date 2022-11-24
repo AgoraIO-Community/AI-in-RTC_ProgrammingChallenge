@@ -1,0 +1,24 @@
+.loading {
+  background: #000099;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  position: fixed;
+  width:100%;
+  height:100%;
+}
+
+.loading > text {
+  color: #ffffff;
+  font-size: 50px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+live-pusher {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,200 @@
+*{
+    moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select:none;
+    -khtml-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.mainWrapper {
+    background-image: url("./assets/img/background.png");
+    width: 1920px;
+    height:1080px;
+    margin-top: -8px;
+    margin-left: -8px;
+    z-index: -5;
+}
+.body1 {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+@font-face {
+    font-family: "font1";
+    src: url("./assets/font1.otf");
+}
+
+@font-face {
+    font-family: "Digiface";
+    src: url("./assets/font2.ttf");
+}
+
+.teamName {
+    font-size: 50px;
+    position: fixed;
+    top:55px;
+    color: white;
+    font-family: "font1";
+}
+.teamNameC {
+    left:213px;
+}
+.teamNameCC {
+    right:213px;
+}
+.title {
+    top:200px;
+    color:#28769b;
+    font-family: "font1";
+    font-size: 70px;
+    position: fixed;
+    text-align: center;
+    width:1080px;
+}
+.txt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.status {
+    position: fixed;
+    top:300px;
+    color:white;
+    font-family: "font1";
+    font-size: 70px;
+    text-align: center;
+    width:1080px;
+}
+.bigTime {
+    top:260px;
+    color:white;
+    font-family: "Digiface";
+    font-size: 200px;
+    position: fixed;
+    text-align: center;
+    width:1080px;
+}
+.images {
+    position: fixed;
+    padding: 50px;
+    top: 700px;
+    z-index: 10;
+}
+.black {
+    background-image: url("./assets/img/block.png");
+    position: relative;
+    height: 90px;
+    width: 212px;
+    top: -95px;
+    z-index: 100;
+}
+.position {
+    position: relative;
+    top: -200px;
+    left: 120px;
+    font-size: 20px;
+}
+.name {
+    z-index: 101;
+    position: relative;
+    top: -225px;
+    left: 110px;
+    font-size: 30px;
+}
+.imgBox-C-1 {
+    position: fixed;
+    left: 700px;
+    font-family: "font1";
+    color:white;
+}
+.imgBox-C-2 {
+    position: fixed;
+    left: 475px;
+    font-family: "font1";
+    color:white;
+}
+.imgBox-C-3 {
+    position: fixed;
+    left: 250px;
+    font-family: "font1";
+    color:white;
+}
+.imgBox-C-4 {
+    position: fixed;
+    left: 25px;
+    font-family: "font1";
+    color:white;
+}
+.imgBox-CC-1 {
+    position: fixed;
+    right: 700px;
+    font-family: "font1";
+    color:white;
+}
+.imgBox-CC-2 {
+    position: fixed;
+    right: 475px;
+    font-family: "font1";
+    color:white;
+}
+.imgBox-CC-3 {
+    position: fixed;
+    right: 250px;
+    font-family: "font1";
+    color:white;
+}
+.imgBox-CC-4 {
+    position: fixed;
+    right: 25px;
+    font-family: "font1";
+    color:white;
+}
+.imgBox {
+    opacity: 0.4;
+    height: 200px;
+    width:  200px;
+}
+.a-active {
+    opacity:1;
+}
+.CTime {
+     top:300px;
+     left:-70px;
+     color:rgb(191,39,39);
+     font-family: "Digiface";
+     font-size: 200px;
+     position: fixed;
+     text-align: center;
+     width:1080px;
+     
+ }
+.CCTime {
+     top:300px;
+     right:-70px;
+     color:rgb(0,122,156);
+     font-family: "Digiface";
+     font-size: 200px;
+     position: fixed;
+     text-align: center;
+     width:1080px;
+     
+ }
+.invisible {
+    display: none;
+}
+.two-line {
+    top:135px;
+}
+
+.danger-time-big {
+    color: rgb(191,39,39);
+}
+
+.danger-time-small {
+    color: yellowgreen;
+}
+
+.img-b {
+    height: 212px;
+    width:  212px;
+}
